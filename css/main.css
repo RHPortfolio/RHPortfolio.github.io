@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Mervale Script';
+    src: url('../assets/fonts/mervale-script-webfont.woff2') format('woff2'),
+         url('../assets/fonts/mervale-script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
   margin: 0;
@@ -31,6 +39,7 @@ body {
 #writer { background: #74B6A2; color: white;}
 
 
+#title { font-family: "Mervale Script"; font-size: 10vh;}
 .gentle-center {
   display: flex;
   flex-direction: column;
