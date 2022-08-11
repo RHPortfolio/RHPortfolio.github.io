@@ -7,6 +7,16 @@
 }
 
 
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('../assets/fonts/abrilfatface-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/abrilfatface-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
   margin: 0;
 }
@@ -40,6 +50,14 @@ body {
 
 
 #title { font-family: "Mervale Script"; font-size: 10vh;}
+#developer_title { font-family: "Abril Fatface"; font-size: 3vh;}
+#developer_title::before {
+  content: "{";
+}
+#developer_title::after {
+  content: "}";
+}
+
 .gentle-center {
   display: flex;
   flex-direction: column;
