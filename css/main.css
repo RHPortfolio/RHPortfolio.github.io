@@ -1,7 +1,44 @@
+
+body {
+  margin: 0;
+}
+
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper section {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y:scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.wrapper footer {
+  min-height: 20vh;
+  max-height: 100vh;
+  overflow-y:scroll;
+  scroll-snap-type: y mandatory;
+}
+
+#front_title {background: #E9EBEA; color: #112B23;}
+#developer, #footer { background: #112B23;color: white;}
+#product { background: #1C483B;color: white;}
+#designer { background: #35866E;color: white;}
+#writer { background: #74B6A2; color: white;}
+
+
 .gentle-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1ch;
+}
+
+.scroll-snap {
+  scroll-snap-align: start;
 }
