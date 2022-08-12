@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  color: #112B23;
 }
 
 
@@ -25,11 +26,11 @@ body {
 }
 
 #front_title {background: #E9EBEA; color: #112B23;}
+#front_title .gentle-center {min-height: 82vh;}
 #developer, #footer { background: #112B23;color: white;}
 #product { background: #1C483B;color: white;}
 #designer { background: #35866E;color: white;}
 #writer { background: #74B6A2; color: white;}
-
 
 #title { font-family: "Mervale Script"; font-size: 10vh;}
 #developer_title { font-family: "Abril Fatface"; font-size: 3vh;}
@@ -39,9 +40,9 @@ body {
 #developer_title::after {
   content: "}";
 }
-#product_title { font-family: "Alegreya SC Regular"; font-size: 3vh;}
+#product_title { font-family: "Alegreya SC Regular"; font-size: 3vh; padding-top: 2px;}
 #designer_title { font-family: "Alfa Slab One"; font-size: 3vh;}
-#writer_title { font-family: "Allison Regular"; font-size: 3vh;}
+#writer_title { font-family: "Allison Regular"; font-size: 5vh;}
 
 .gentle-center {
   display: flex;
@@ -58,8 +59,25 @@ body {
 #roles {
   display: flex;
   gap: 3ch;
+  align-items: center;
 }
 
 #roles li {
   list-style: none;
 }
+
+#roles a, #roles a:hover, #roles a:active, #roles a:checked, #roles a:visited {
+text-decoration: none;
+color: #112B23;
+}
+
+.spanner {
+  /* height: 50px; */
+  width: 100%;
+  background-color: #555;
+}
+
+#decoration_1{background: #112B23;height: 2vh;}
+#decoration_2{background: #1C483B;height: 3vh;}
+#decoration_3{background: #35866E;height: 5vh;}
+#decoration_4{background: #74B6A2;height: 8vh;}
