@@ -33,11 +33,11 @@ body {
 #writer { background: #74B6A2; color: white;}
 
 #title { font-family: "Mervale Script"; font-size: 10vh;}
-#developer_title { font-family: "Abril Fatface"; font-size: 3vh;}
-#developer_title::before {
+#developer_title, #developer-page-title { font-family: "Abril Fatface"; font-size: 3vh;}
+#developer_title::before, #developer-page-title::before {
   content: "{";
 }
-#developer_title::after {
+#developer_title::after, #developer-page-title::after {
   content: "}";
 }
 #product_title { font-family: "Alegreya SC Regular"; font-size: 3vh; padding-top: 2px;}
