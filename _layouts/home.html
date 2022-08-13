@@ -31,12 +31,21 @@
       </section>
 
       <section id="developer" class="scroll-snap gentle-center">
-        <h2 class="scroll-snap">Developer</h2>
+        <div class="scroll-page">
+          <h2 id="developer-page-title" class="scroll-snap">Developer</h2>
+              <ul>
+  {% for post in site.tags.developer %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+          </div>
       </section>
       <section id="product" class="scroll-snap gentle-center">Test 2</section>
       <section id="designer" class="scroll-snap gentle-center">Test 3</section>
       <section id="writer" class="scroll-snap gentle-center"> Test 4</section>
-    {{ content }}
+
       <footer id="footer" class="gentle-center">Footer links</footer>
   </div>
 {% include scripts.html %}
