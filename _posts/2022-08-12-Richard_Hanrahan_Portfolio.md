@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Richard Hanrahan Portfolio"
+image: Richard_Hanrahan_Portfolio.png
 date:   2022-08-06 23:58:35 +0100
 categories: developer projects
 tags: developer highlighted
 summary: The website you are currently browsing
 tech: Github, Github Pages, Jekyll, HTML, CSS, No Javascript, Markdown
 ---
-#Richard Hanrahan Portfolio
 
 This is the website you are currently looking at. I built this as an easy to put together project that could tidily demonstrate my ability as a front end developer, without being all flashy and dancing as you often see.
 

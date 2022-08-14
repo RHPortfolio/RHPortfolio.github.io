@@ -1,0 +1,16 @@
+- id: developer
+  title: Developer
+  summary: "I graduated from a full-stack coding bootcamp in 2019, and got a job as a front-end developer the next week. The following projects have been higlighted from my work history as well as personal or educational projects."
+  work_history: ["CodeClan (Oct 2019 - Feb 2020)", "People's Energy (Jan 2020 - Sept 2021)"]
+
+- id: product
+  title: Product Owner
+  summary: "This is the Product Owner part of the website. This is where I demonstrate my experience as a Product Owner"
+
+- id: designer
+  title: Designer
+  summary: "This is the designer part of the website. This is where I demonstrate my experience as a designer"
+
+- id: writer
+  title: Writer
+  summary: "This is the writer part of the website. This is where I demonstrate my experience as a writer"
