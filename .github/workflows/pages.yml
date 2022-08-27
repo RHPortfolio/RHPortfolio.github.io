@@ -40,7 +40,7 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
 #       Adds Dato CMS integration
       - name: Retrieve Content
-        run: dato dump        
+        run: dato dump --token=${{secrets.DATO_CMS_TOKEN}}
         
       - name: Setup Pages
         id: pages
