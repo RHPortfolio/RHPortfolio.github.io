@@ -1,10 +1,88 @@
 
-body {
-  margin: 0;
-  color: #112B23;
+/* Mobile Display, Desktop Classes Hidden */
+@media only screen and (width < 1024px) {
+  .desktop { display: none !important;}
+  .mobile { display: block !important;}
 }
 
+/* Mobile Display, Desktop Classes Hidden */
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+  .desktop { display: block !important; }
+  .mobile { display: none !important;}
+}
 
+html {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+body {
+  margin: 0;
+  line-height: 4vh;
+  color: #112B23;
+  font-family: "Prata";
+}
+
+/* COLOURS */
+.bg-developer {
+  background: rgba(24, 42, 34, 1);
+}
+.bg-default {
+  background: rgba(233, 235, 234, 1);
+}
+.bg-product {
+  background: rgba(40, 71, 59, 1);
+}
+.bg-designer {
+  background: rgba(75, 132, 110, 1);
+}
+.bg-writer {
+  background: rgba(115, 182, 162, 1);
+}
+
+.bg-developer-faded {
+  background: rgba(24, 42, 34, 0.6);
+}
+.bg-default-faded {
+  background: rgba(233, 235, 234, 0.6);
+}
+.bg-product-faded {
+  background: rgba(40, 71, 59, 0.6);
+}
+.bg-designer-faded {
+  background: rgba(75, 132, 110, 0.6);
+}
+.bg-writer-faded {
+  background: rgba(115, 182, 162, 0.6);
+}
+
+.text-dark, .text-dark a {
+  color: rgba(24, 42, 34, 1);
+}
+
+.text-light, .text-light a {
+  color: rgba(233, 235, 234, 1);
+}
+
+/* ALIGNMENT and POSITIONING */
+
+.gap-1 { gap: 1ch; }
+.gap-2 { gap: 2ch; }
+.gap-3 { gap: 3ch; }
+.gap-4 { gap: 4ch; }
+.gap-5 { gap: 5ch; }
+
+.mb-1 { margin-bottom: 1vh; }
+.mb-2 { margin-bottom: 2vh; }
+.mb-3 { margin-bottom: 3vh; }
+.mb-4 { margin-bottom: 4vh; }
+.mb-5 { margin-bottom: 5vh; }
+
+.gentle-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .wrapper {
   display: flex;
@@ -13,8 +91,8 @@ body {
 
 .wrapper section {
   min-height: 100vh;
-  max-height: 100vh;
-  overflow-y:scroll;
+  min-height: 100vh;
+  overflow: visible;
   scroll-snap-type: y mandatory;
 }
 
@@ -25,40 +103,15 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-#front_title {background: #E9EBEA; color: #112B23;}
-#front_title .gentle-center {min-height: 82vh;}
-#developer, #footer { background: #112B23;color: white;}
-#product { background: #1C483B;color: white;}
-#designer { background: #35866E;color: white;}
-#writer { background: #74B6A2; color: white;}
+/* Styling for Titles */
 
-#title { font-family: "Mervale Script"; font-size: 10vh;}
-#developer_title, #developer-page-title { font-family: "Abril Fatface"; font-size: 3vh;}
-#developer_title::before, #developer-page-title::before {
-  content: "{";
-}
-#developer_title::after, #developer-page-title::after {
-  content: "}";
-}
-#product_title { font-family: "Alegreya SC Regular"; font-size: 3vh; padding-top: 2px;}
-#designer_title { font-family: "Alfa Slab One"; font-size: 3vh;}
-#writer_title { font-family: "Allison Regular"; font-size: 5vh;}
-
-.gentle-center {
+/* Mobile First */
+@media only screen and (width < 1024px) {
+#roles {
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1ch;
-}
-
-.scroll-snap {
-  scroll-snap-align: start;
-}
-
-#roles {
-  display: flex;
-  gap: 3ch;
   align-items: center;
 }
 
@@ -70,14 +123,264 @@ body {
 text-decoration: none;
 color: #112B23;
 }
-
-.spanner {
-  /* height: 50px; */
-  width: 100%;
-  background-color: #555;
 }
 
-#decoration_1{background: #112B23;height: 2vh;}
-#decoration_2{background: #1C483B;height: 3vh;}
-#decoration_3{background: #35866E;height: 5vh;}
-#decoration_4{background: #74B6A2;height: 8vh;}
+/* Exception for Desktop */
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+
+  #roles {
+    display: flex;
+    gap: 3ch;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  #roles li {
+    list-style: none;
+  }
+
+  #roles a, #roles a:hover, #roles a:active, #roles a:checked, #roles a:visited {
+  text-decoration: none;
+  color: #112B23;
+  }
+
+}
+
+
+/* Richard Hanrahan Main Title */
+
+@media only screen and (width < 1024px) {
+  #title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title, #title-richard, #title-hanrahan {
+    font-family: "Mervale Script";
+    font-size: 10vh;
+    line-height: 10vh;
+  }
+
+  #title-hanrahan {
+    padding-left: 7vh;
+    line-height: 7vh;
+  }
+
+  #front_title {
+    color: #112B23;
+  }
+  #front_title .gentle-center {
+    min-height: 82vh;
+  }
+  }
+
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+#title {
+  font-family: "Mervale Script";
+  font-size: 10vh;
+  line-height: 10vh;
+}
+
+#front_title {
+  background: #E9EBEA;
+  color: #112B23;
+}
+#front_title .gentle-center {
+  min-height: 82vh;
+}
+}
+
+/* Developer Title */
+#developer_title, #developer-page-title {
+  font-family: "Abril Fatface";
+}
+#developer_title {
+  font-size: 3vh;
+}
+
+#developer_title::before, #developer-page-title::before {
+  content: "{";
+}
+#developer_title::after, #developer-page-title::after {
+  content: "}";
+}
+
+/* Product Owner Title */
+#product_title, #product-page-title {
+  font-family: "Alegreya SC Regular";
+}
+
+#product_title {
+  font-size: 3vh;
+  padding-top: 2px;
+}
+
+/* Designer Title */
+#designer_title, #designer-page-title {
+  font-family: "Alfa Slab One";
+}
+#designer_title {
+  font-size: 3vh;
+}
+
+/* Writer Title */
+#writer_title, #writer-page-title {
+  font-family: "Allison Regular";
+}
+
+#writer_title {
+  font-size: 5vh;
+}
+
+
+/* SUB PAGES */
+/* Component */
+
+.scroll-snap {
+  scroll-snap-align: start;
+}
+
+
+.scroll-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+
+  .subpage-content {
+    padding-left: 10vh;
+    padding-right: 10vh;
+    /* min-width: 100%; */
+    min-height: 100vh;
+    overflow: visible;
+  }
+}
+
+@media only screen and (width < 1024px) {
+
+  .subpage-content {
+    min-height: 100vh;
+    width: 80vw;
+    padding: 0vh 0 0 10vw;
+    overflow: visible;
+  }
+}
+
+.subpage-header h2 {
+  font-size: 6vh;
+  margin-bottom: 5vh;
+  margin-top: 7vh;
+}
+
+.subpage-summary {
+  margin-bottom: 5vh;
+}
+
+.subpage-posts {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.subpage-post {
+  display: flex;
+  width: 45vh;
+  height: 30vh;
+  flex-wrap: wrap;
+}
+
+.subpage-post img {
+  object-fit: cover;
+  height: 30vh;
+}
+
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+  .subpage-post img {
+    width: 45vh;
+  }
+}
+
+@media only screen and (width < 1024px) {
+  .subpage-post img {
+    width: 90vw;
+  }
+}
+
+
+.subpage-post a {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  background: rgba(100, 100, 100, 0.4);
+  margin: 24vh -1vh 0vh 3vh;
+  padding: 0 0 0 1vh;
+}
+
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+  .subpage-post a {
+    width: 26vw;
+  }
+}
+
+@media only screen and (width < 1024px) {
+  .subpage-post a {
+    width: 70vw;
+  }
+}
+
+
+
+.subpage-post:hover {
+  /* width: 30vh;
+  height: 30vh; */
+  opacity: 0.7;
+  background-color: #35866E;
+}
+
+
+
+#developer {
+  background: #112B23;
+  color: #E9EBEA;
+}
+#product {
+  background: #1C483B;
+  color: #E9EBEA;
+}
+#designer {
+  background: #35866E;
+  color: #112B23;
+}
+#writer {
+  background: #74B6A2;
+  color: #112B23;
+}
+
+/* FOOTER COMPONENT */
+#footer {
+  background: #112B23;
+  color: #E9EBEA;
+}
+
+/* DECORATIVE ELEMENTS */
+.spanner {
+  width: 100%;
+}
+
+#decoration_1{ height: 2vh;}
+#decoration_2{ height: 3vh;}
+#decoration_3{ height: 5vh;}
+#decoration_4{ height: 8vh;}
+
+.back-to-top a {
+  text-decoration: none;
+}
+
+.back-to-top::before {
+  content: "⇧";
+}
