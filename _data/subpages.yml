@@ -1,16 +1,35 @@
 - id: developer
   title: Developer
-  summary: "I graduated from a full-stack coding bootcamp in 2019, and got a job as a front-end developer the next week. The following projects have been higlighted from my work history as well as personal or educational projects."
-  work_history: ["CodeClan (Oct 2019 - Feb 2020)", "People's Energy (Jan 2020 - Sept 2021)"]
+  order: 10
+  summary: |-
+    I graduated from a full-stack coding bootcamp in 2019, and got a job as a front-end developer the next week. Due to previous experience with graphic design and instincts for UX, I have found myself attracted to front-end design, but enjoy the challenges of systems architecture and using cloud solutions to create strategic, unique solutions to the problems we are presented with in development teams.
 
+    The following projects have been highlighted from my work history as well as personal or educational projects:
+  work_history:
+  - title: Professional Software Development (Course) (2019-10-25 - 2020-02-01)
+  - title: Junior Front End Developer  (2020-02-01 - 2020-05-01)
+  - title: Lead Developer (2020-06-08 - 2021-01-01)
+  - title: Web Developer (2022-04-01 - present)
 - id: product
   title: Product Owner
-  summary: "This is the Product Owner part of the website. This is where I demonstrate my experience as a Product Owner"
-
+  order: 200
+  summary: This is the Product Owner part of the website. This is where I demonstrate
+    my experience as a Product Owner
+  work_history:
+  - title: Head of IT and Product (2021-10-01 - 2022-04-01)
+  - title: Junior Product Owner (2021-05-01 - 2021-10-01)
 - id: designer
   title: Designer
-  summary: "This is the designer part of the website. This is where I demonstrate my experience as a designer"
-
+  order: 400
+  summary: 'I''m using this category to encapsulate a lot of work I accomplished,
+    often involving Graphic Design, but which also includes typesetting books, logo
+    design, motion design in video. Please enjoy my wall of work:'
+  work_history:
+  - title: Graphic Design and Videography (2017-09-01 - 2019-10-01)
+  - title: Junior Front End Developer  (2020-02-01 - 2020-05-01)
 - id: writer
   title: Writer
-  summary: "This is the writer part of the website. This is where I demonstrate my experience as a writer"
+  order: 900
+  summary: '"This is the writer part of the website. This is where I demonstrate my
+    experience as a writer"'
+  work_history: []
