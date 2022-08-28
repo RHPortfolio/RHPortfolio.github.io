@@ -1,53 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/fonts.css">
-  <link rel="stylesheet" href="../css/main.css">
 {% include head.html %}
-</head>
-<body>
-  <div class="wrapper">
-    <section id="front_title" class="scroll-snap">
-      <div class="gentle-center">
-        <h1 id="title">Richard<wbr /> Hanrahan</h1>
-      <ul id="roles">
-        <li id="developer_title"><a href="#developer">Developer</a></li>
-        <li id="product_title"><a href="#product">Product Owner</a></li>
-        <li id="designer_title"><a href="#designer">Designer</a></li>
-        <li id="writer_title"><a href="#writer">Writer</a></li>
-      </ul>
-        </div>
+    {% include front_title_page.html %}
 
-      <div id="decoration_1" class="spanner"></div>
-      <div id="decoration_2" class="spanner"></div>
-      <div id="decoration_3" class="spanner"></div>
-      <div id="decoration_4" class="spanner"></div>
-      </section>
+    <!-- Dynamic SubPage Creation -->
+      {% for subpage in site.data.subpages %}
+        {% include _subpage.html subpage=subpage %}
+      {% endfor %}
 
-      <section id="developer" class="scroll-snap gentle-center">
-        <div class="scroll-page">
-          <h2 id="developer-page-title" class="scroll-snap">Developer</h2>
-              <ul>
-  {% for post in site.tags.developer %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-          </div>
-      </section>
-      <section id="product" class="scroll-snap gentle-center">Test 2</section>
-      <section id="designer" class="scroll-snap gentle-center">Test 3</section>
-      <section id="writer" class="scroll-snap gentle-center"> Test 4</section>
-
-      <footer id="footer" class="gentle-center">Footer links</footer>
-  </div>
-{% include scripts.html %}
-</body>
-</html>
+{% include footer.html %}
