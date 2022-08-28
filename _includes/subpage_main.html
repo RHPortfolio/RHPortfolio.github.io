@@ -1,0 +1,44 @@
+<main class="subpage-main">
+  <p class="subpage-summary">{{subpage.summary}}</p>
+  <ul class="subpage-posts mb-5">
+    {% case subpage.id | downcase %}
+      {% when "developer" %}
+        {% for post in site.tags.developer limit:3 %}
+          {% if post.tags contains "highlighted" %}
+            {% if post.image != "" %}
+            {% include subpage_highlighted_image.html
+                url=post.url
+                title=post.title
+                image=post.image %}
+            {% else %}
+              {% include subpage_highlighted_image.html
+                url=post.url
+                title=post.title
+                image="../assets/default.webp" %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% when "product" %}
+        {% for post in site.tags.product limit:2 %}
+          {% if post.tags contains "highlighted" %}
+            {% if post.image != "" %}
+              {% include subpage_highlighted_image.html
+                url=post.url
+                title=post.title
+                image=post.image %}
+              {% else %}
+                {% include subpage_highlighted_image.html
+                  url=post.url
+                  title=post.title
+                  image="../assets/default.webp" %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+      {% else %}
+         This is not the developer subpage, this is the {{subpage.id}}.
+    {% endcase %}
+  </ul>
+
+  {% include subpage_post_list.html id=subpage.id %}
+
+  </main>
