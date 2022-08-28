@@ -1,0 +1,13 @@
+<section id="more-content">
+  <header>
+    <h2>More Content</h2>
+    </header>
+  <ul>
+
+      {% for post in site.posts limit: 6 %}
+        {% include _magazine/more_content_article.html category=post.categories date=post.date summary=post.summary title=post.title image=post.thumbnail number=forloop.index %}
+      {% endfor %}
+
+
+  </ul>
+</section>

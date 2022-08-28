@@ -1,0 +1,24 @@
+<li>
+  <a href="{{include.url}}">
+    {% if include.image %}
+      <img src="{{include.image}}"" />
+    {% else %}
+      <img src="/assets/image_{{include.number}}.webp" />
+    {% endif %}
+  </a>
+  <div id="more-content-text-container">
+    <a href="{{site.url}}#{{include.category[0]}}"><p id="more-content-category"><span id="more-content-category-span">{{ include.category[0] }}</span></p></a>
+    <a href="{{include.url}}"><h3>{{ include.title }}</h3></a>
+  <p>
+     {{ include.summary }}
+    </p>
+  <footer>
+    <p>
+      Richard Hanrahan
+      </p>
+  <p>
+    {{include.date | date: "%d.%m.%y" }}
+  </p>
+    </footer>
+    </div>
+</li>
