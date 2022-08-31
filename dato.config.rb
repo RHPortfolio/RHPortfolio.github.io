@@ -25,6 +25,37 @@ create_data_file(
   :yaml,
   subpages)
 
+designs = dato.design_projects.map do | design |
+
+  {
+    title: design.title,
+    date: design.when,
+    summary: design.description,
+    banner: design.main_image.try(:url),
+    photographer: {
+      name: design.photographer,
+      url: design.photographer_link
+    },
+    illustrator: {
+      name: design.illustrator,
+      url: design.illustrator_link
+    },
+    client: {
+      name: design.client,
+      url: design.client_link
+    },
+    attachements: design.all_images.map do | img |
+      {
+        url: img.try(:url)
+      }
+    end
+  }
+end
+
+create_data_file(
+  "_data/designs.yml",
+  :yaml,
+  designs)
 
 directory "_posts" do
 
