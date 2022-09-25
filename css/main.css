@@ -5,7 +5,7 @@
   .mobile { display: block !important;}
 }
 
-/* Mobile Display, Desktop Classes Hidden */
+/* Desktop Display, Mobile Classes Hidden */
 @media only screen and (width >= 1024px) and (orientation : landscape) {
   .desktop { display: block !important; }
   .mobile { display: none !important;}
@@ -279,24 +279,78 @@ color: #112B23;
   margin-bottom: 5vh;
 }
 
+
 .subpage-posts {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .subpage-post {
-  display: flex;
-  width: 45vh;
+  display: block;
   height: 30vh;
-  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 1vw;
+}
+
+@media only screen and (width < 1024px) {
+  .subpage-post {
+    width: 90vw !important;
+  }
 }
 
 .subpage-post img {
   object-fit: cover;
   height: 30vh;
+  object-fit: cover;
+  background-blend-mode: overlay;
+  background: transparent;
+  transition: 2s;
+}
+
+.subpage-post:hover img {
+  background-color: rgba(24, 42, 34, 1)
+}
+
+
+
+.text-overlay {
+  transition: 0.5s;
+  position: relative;
+  top: -40%;
+  height: 60%;
+  background: rgba(115, 182, 162, 0.7);
+  padding: 10px 12px;
+  overflow: hidden;
+  box-shadow: 0 1vh 5vh rgb(0 0 0);
+}
+
+.text-overlay h2 {
+  font-family: 'Abril Fatface';
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.text-overlay p {
+  font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-top: 0.5vh;
+    text-transform: capitalize;
+    width: 75%;
+}
+
+.subpage-post a {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  /* background: rgba(100, 100, 100, 0.4); */
+  /* margin: 24vh -1vh 0vh 3vh; */
+  /* padding: 0 0 0 1vh; */
+}
+
+.subpage-post:hover > .text-overlay {
+  top: -60% !important;
+  transition: 0.5s;
 }
 
 @media only screen and (width >= 1024px) and (orientation : landscape) {
@@ -311,22 +365,6 @@ color: #112B23;
   }
 }
 
-
-.subpage-post a {
-  position: absolute;
-  color: white;
-  text-decoration: none;
-  background: rgba(100, 100, 100, 0.4);
-  margin: 24vh -1vh 0vh 3vh;
-  padding: 0 0 0 1vh;
-}
-
-@media only screen and (width >= 1024px) and (orientation : landscape) {
-  .subpage-post a {
-    width: 26vw;
-  }
-}
-
 @media only screen and (width < 1024px) {
   .subpage-post a {
     width: 70vw;
@@ -334,13 +372,6 @@ color: #112B23;
 }
 
 
-
-.subpage-post:hover {
-  /* width: 30vh;
-  height: 30vh; */
-  opacity: 0.7;
-  background-color: #35866E;
-}
 
 
 
@@ -383,4 +414,202 @@ color: #112B23;
 
 .back-to-top::before {
   content: "⇧";
+}
+
+#design-wall {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#design-wall .design-wall-item {
+  width: 20%;
+  height: 25vh;
+}
+
+.design-wall-item img {
+  width: 100%;
+}
+
+@media only screen and (width < 1024px) {
+
+  #design-wall .design-wall-item {
+    width: 50%;
+  }
+}
+
+#design-wall img:hover {
+  /* opacity: 0.7; */
+  /* background-color: #35866E; */
+}
+
+.design-wall-item a {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  background: rgba(100, 100, 100, 0.4);
+  margin: 24vh -1vh 0vh 3vh;
+  padding: 0 0 0 1vh;
+}
+
+/* Design Wall Portfolio : GRID */
+#design-wall-container {
+  display: grid;
+      grid-gap: 1vw;
+      grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+      grid-auto-rows: 20vw;
+      grid-auto-flow: dense;
+      width: 100%;
+}
+
+@media only screen and (width < 1024px) {
+  #design-wall-container {
+      grid-auto-rows: auto;
+      grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+
+}
+}
+
+
+.horizontal {
+  /* background:  #00695C; */
+  grid-column: span 2;
+}
+
+.vertical {
+  /* background: #009688; */
+  grid-row: span 2;
+}
+
+.big {
+  /* background: #4DB6AC; */
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.normal {
+  /* background: #80CBC4; */
+}
+
+/* other stuff */
+
+#design-wall-container > article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    font-family: helvetica;
+    transition: 2s;
+}
+
+#design-wall-container > article > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+.hallucination {
+  opacity: 1;
+    /* mix-blend-mode: normal;
+    background-blend-mode: normal; */
+    /* filter: brightness(1); */
+}
+
+.hallucination:hover img  {
+  transition: 2s;
+  opacity: 0.3;
+  filter: blur(1px) brightness(0.3) saturate(0.3);
+  /* mix-blend-mode: multiply; */
+  /* background-blend-mode: screen; */
+}
+
+.hallucination:hover::after, .hallucination:hover::before {
+    /* transform: scale(1.05); */
+  }
+
+.hallucination {
+  background-size: cover;
+  background-position: center;
+  /* mix-blend-mode: normal; */
+  position: relative;
+  overflow: hidden;
+  /* background-color: magenta; */
+  /* background-blend-mode: normal; */
+
+  }
+
+.hallucination img {
+  vertical-align: top !important;
+	margin: 0 !important;
+}
+/*
+.hallucination::before, .hallucination:hover::before{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  background-color: yellow;
+  transform-origin: top left;
+
+}
+
+.hallucination::after, .hallucination:hover::after {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  background-color: cyan;
+  transform-origin: bottom right;
+  }
+ */
+}
+
+
+#design-wall-container > article > a {
+  top: calc();
+  left: -35vw;
+  position: absolute;
+  margin: 0;
+  padding: 20px;
+  color: white;
+    width: 75%;
+}
+
+#design-wall-container > article:hover > a {
+  transition: 2s;
+  left: 0;
+  text-decoration: none;
+
+}
+
+#design-wall-container > article > a > h3.image-text-top {
+  font-family: 'Prata';
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+/*
+#design-wall-container > article > a > h3::after {
+  content: " //"
+} */
+
+#design-wall-container > article > a > p {
+  display: inline;
+      font-family: 'Abril Fatface';
+      font-weight: 400;
 }
