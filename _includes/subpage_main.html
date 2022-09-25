@@ -1,7 +1,8 @@
 <main class="subpage-main">
   <p class="subpage-summary">{{subpage.summary}}</p>
   <ul class="subpage-posts mb-5">
-    {% case subpage.id | downcase %}
+    {% assign _subpage = (subpage.id | downcase) %}
+    {% case _subpage %}
       {% when "developer" %}
         {% for post in site.tags.developer limit:3 %}
           {% if post.tags contains "highlighted" %}
@@ -18,6 +19,7 @@
             {% endif %}
           {% endif %}
         {% endfor %}
+
       {% when "product" %}
         {% for post in site.tags.product limit:2 %}
           {% if post.tags contains "highlighted" %}
@@ -34,11 +36,22 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+      {% when "designer" %}
+
+      {% include design_wall.html designs=site.data.designs %}
       {% else %}
          This is not the developer subpage, this is the {{subpage.id}}.
     {% endcase %}
   </ul>
 
-  {% include subpage_post_list.html id=subpage.id %}
+  {% case _subpage %}
+    {% when "product"%}
+      {% include subpage_post_list.html id=subpage.id %}
 
+
+    {% when "designer"%}
+      <p>You can find all designs on my <a href="">seperate design portoflio</a></p>
+
+
+  {% endcase %}
   </main>
