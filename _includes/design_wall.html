@@ -1,0 +1,48 @@
+<!-- Many thanks to this codepen for a clean grid design inspiration https://codepen.io/ashleynakamoto/pen/pMopML -->
+<div id="design-wall-container">
+    {% for design in include.designs limit:6 %}
+    <article class="normal mobile">
+      <img src="{{design.banner}}?fit=crop&w=200&h=200&crop=focalpoint" alt="{{design.title}}" />
+      </article>
+    {% endfor %}
+    {% for design in include.designs limit:8 %}
+    {% case forloop.index | modulo: 7 | round %}
+      {% when 1 %}
+        {% include design_wall_item.html
+          grid-class="normal"
+          banner=design.banner
+          title=design.title %}
+      {% when 2 %}
+        {% include design_wall_item.html
+          grid-class="vertical"
+          banner=design.banner
+          title=design.title %}
+      {% when 3 %}
+        {% include design_wall_item.html
+          grid-class="big"
+          banner=design.banner
+          title=design.title %}
+      {% when 4 %}
+        {% include design_wall_item.html
+          grid-class="normal"
+          banner=design.banner
+          title=design.title %}
+      {% when 5 %}
+        {% include design_wall_item.html
+          grid-class="normal"
+          banner=design.banner
+          title=design.title %}
+      {% when 6 %}
+          {% include design_wall_item.html
+            grid-class="normal"
+            banner=design.banner
+            title=design.title %}
+      {% else %}
+        {% include design_wall_item.html
+          grid-class="normal"
+          banner=design.banner
+          title=design.title %}
+    {% endcase %}
+    {% endfor %}
+
+</div>
