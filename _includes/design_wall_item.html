@@ -1,0 +1,25 @@
+{% case include.grid-class %}
+  {% when "vertical" %}
+    {% assign width = 265 %}
+    {% assign height = 540 %}
+  {% when "big" %}
+    {% assign width = 540 %}
+    {% assign height = 540 %}
+  {% else %}
+    {% assign width = 265 %}
+    {% assign height = 265 %}
+{% endcase %}
+
+<article class="{{include.grid-class}} hallucination desktop" >
+  <img
+    srcset="
+      {{include.banner}}?fit=crop&w={{width}}&h={{height}}&crop=focalpoint&q=85&format=auto&dpr=1 1x,
+      {{include.banner}}?fit=crop&w={{width}}&h={{height}}&crop=focalpoint&q=85&format=auto&dpr=2 2x,
+      {{include.banner}}?fit=crop&w={{width}}&h={{height}}&crop=focalpoint&q=85&format=auto&dpr=3 3x"
+    src="{{include.banner}}?fit=crop&w={{width}}&h={{height}}&crop=focalpoint&q=85&format=auto" alt="{{include.title}}" />
+  <a href="{{ design.url }}">
+    <h3 class="image-text-top">{{design.medium}} | {{ design.date | split: "-" | first }}</h3>
+    <p>{{ design.client.name | default: "Example Text Title" }}</p>
+    <!-- <p class="date">()</p> -->
+  </a>
+</article>
