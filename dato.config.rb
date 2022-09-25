@@ -29,28 +29,37 @@ designs = dato.design_projects.map do | design |
 
   {
     title: design.title,
+    medium: design.medium.try(:title),
+    highlighted: design.highlighted,
     date: design.when,
     summary: design.description,
     banner: design.main_image.try(:url),
     photographer: {
-      name: design.photographer,
-      url: design.photographer_link
+      name: design.photographer ? design.photographer.name : "",
+      url: design.photographer ? design.photographer.link : ""
     },
     illustrator: {
-      name: design.illustrator,
-      url: design.illustrator_link
+      name: design.illustrator ? design.illustrator.name  : "",
+      url: design.illustrator ? design.illustrator.link : ""
     },
     client: {
-      name: design.client,
-      url: design.client_link
+      name: design.client ? design.client.name  : "",
+      url: design.client ? design.client.link : ""
     },
-    attachements: design.all_images.map do | img |
+    attachments: design.all_images.map do | img |
       {
         url: img.try(:url)
       }
     end
   }
 end
+
+designs.delete_if{|design| design[:highlighted] == false}.sort_by! do | design |
+  design[:date]
+end
+
+designs.reverse!
+
 
 create_data_file(
   "_data/designs.yml",
