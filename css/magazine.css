@@ -154,6 +154,17 @@ nav {
   background: none;
 }
 
+
+@media only screen and (width < 1024px) {
+
+  #logo img {
+    position: relative;
+    left: -4vw;
+  }
+}
+
+
+
 #navbar-socials {
   width: 5vw;
     display: flex;
