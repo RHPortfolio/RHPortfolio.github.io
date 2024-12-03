@@ -117,10 +117,10 @@ strong, bold, {
 }
 
 a, a:hover, a:active, a:visited {
-  /* text-decoration: none; */
+   text-decoration: none; 
   font-weight: 700;
-  text-underline-position:below;
-  text-underline-offset: 1vw;
+  /*text-underline-position:below;
+  text-underline-offset: 1vw;*/
 }
 
 a {
@@ -148,22 +148,111 @@ nav {
 }
 
 
+section#logo {
+  width: 100%;
+  font-family: "Mervale Script";
+}
+
 #logo img {
   height: 5vh !important;
   border: none !important;
   background: none;
 }
 
-
-@media only screen and (width < 1024px) {
+/* INCLUDE for SVG Logo */
+/*@media only screen and (width < 1024px) {
 
   #logo img {
     position: relative;
     left: -4vw;
   }
 }
+*/
 
 
+/*@media only screen and (width < 1024px) {
+    #logo .mobile {
+        position: relative;
+        left: -4vw;
+    }
+}*/
+/*
+#logo .mobile {
+    height: 5vh !important;
+    border: none !important;
+    background: none;
+  }*/
+
+
+h1#title-mobile.mobile, h1#title.desktop{
+  display: flex;
+  justify-content: center;
+  font-family: "Mervale Script";
+}
+
+@media only screen and (width < 1024px) {
+  #title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #title, #title-richard, #title-hanrahan {
+    font-family: "Mervale Script";
+    font-size: 4vh;
+/*    line-height: 10vh;*/
+    font-weight: 500;
+    color: white;
+
+  }
+
+  #title-richard {
+    font-size: 5vh;
+  }
+    #title-hanrahan {
+        font-size: 4vh;
+  }
+}
+/*    padding-left: 7vh;*/
+/*    line-height: 7vh;*/
+  }
+
+  #front_title {
+    color: #ffffff;
+  }
+  #front_title .gentle-center {
+    min-height: 82vh;
+  }
+  }
+
+@media only screen and (width >= 1024px) and (orientation : landscape) {
+#title {
+  font-family: "Mervale Script";
+  font-size: 10vh;
+  line-height: 10vh;
+}
+
+#front_title {
+  background: #E9EBEA;
+  color: #ffffff;
+}
+#front_title .gentle-center {
+  min-height: 82vh;
+}
+}
+
+/* RH Responsive */
+section#logo h1 {
+  font-size: 2rem;
+  line-height: 1.8rem;
+  color: white;
+}
+
+section#logo h1 a, section#logo h1 a:visited, section#logo h1 a:hover, section#logo h1 a:active {
+  font-weight: 300;
+/* text-underline-position: auto;*/
+/* text-underline-offset: 0;*/
+  text-decoration: none;
+}
 
 #navbar-socials {
   width: 5vw;
@@ -239,6 +328,7 @@ td img {
 
 /* ARTICLE STYLING ELEMENTS */
 /* TITLE and META SECTION */
+
 .date {
   font-style: italic;
 }
