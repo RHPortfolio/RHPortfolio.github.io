@@ -43,10 +43,10 @@ defaults:
     values:
       image: true
 
-collections:
-  archives:
-    output: true
-    permalink: /archive/:path/
+# collections:
+#   archives:
+#     output: true
+#     permalink: /archive/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
