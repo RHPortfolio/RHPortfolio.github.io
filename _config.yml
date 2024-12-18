@@ -33,6 +33,21 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+defaults:
+  - scope:
+      path: "assets/_images"
+    values:
+      image: true
+  - scope:
+      path: "assets/_images/jimmy"
+    values:
+      image: true
+
+collections:
+  archives:
+    output: true
+    permalink: /archive/:path/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

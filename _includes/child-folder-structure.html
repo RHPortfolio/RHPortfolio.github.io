@@ -1,0 +1,8 @@
+{% assign folder = include.folder %}
+{% for page in folder %}
+      <url>
+        <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+       </url>
+  {% endfor %}

@@ -1,11 +1,13 @@
-<section id={{subpage.id}} class="scroll-snap scroll-page">
+<section id={{subpage.id}} class="scroll-snap scroll-page {{subpage.bg}}">
   <div class="subpage-content">
-    {% include subpage_header.html id=subpage.id title=subpage.title %}
+    {% include subpage_header.html id=subpage.id title=subpage.title bg=subpage.bg %}
 
     {% include subpage_main.html %}
 
     <footer>
       {% case subpage.id | downcase %}
+      {% when "latest" %}
+          {% include back_to_top.html text-css="text-light" %}
         {% when "developer" %}
           {% include back_to_top.html text-css="text-light" %}
         {% when "product" %}

@@ -1,0 +1,1 @@
+*Welcome to my monthly update, where I bring you up to speed with some half-baked thoughts and general schemes, and point you towards some great content you might not have seen before. Let's begin!*

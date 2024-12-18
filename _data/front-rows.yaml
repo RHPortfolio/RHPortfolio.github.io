@@ -1,0 +1,34 @@
+- id: latest
+  type: posts
+  title: "Latest Posts"
+  order: 10
+  summary: ""
+  bg: dark-green
+  link-url: "/archive"
+- id: wrds
+  type: posts
+  title: "Wrds"
+  order: 30
+  summary: ""
+  bg: platinum
+  link-url: "/wrds"
+- id: shorts
+  type: posts
+  title: "Short Stories"
+  order: 20
+  summary: ""
+  bg: cambridge
+  link-url: "/shorts"
+- id: extracts
+  type: posts
+  title: 'Book Extracts'
+  order: 40
+  bg: cambridge
+  link-url: "/alternative-wordbook"
+- id: blogs
+  type: posts
+  title: "Newsletter Round-ups"
+  order: 50
+  summary: ""
+  bg: viridian
+  link-url: "/blog"

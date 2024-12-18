@@ -1,0 +1,16 @@
+<section class="subscribe-banner">
+	<div class="form-container">{% include newsletter.html id="hero" %}</div>
+	{% for post in site.tags.newsletter limit:1 %}
+	<a class="banner-link" href="{{ post.url }}">
+		<div class="latest-post-container" style="
+		background-image: url('{{ post.image }}');
+		background-size: cover;
+    	background-position: center;
+   		overflow: hidden;">
+
+		<p><span class="read-this">Read the latest newsletter</span><br />
+        <span class="post-title">{{post.title}}</span></p>
+        <!-- <a href="{{ post.url }}"><img class="pinned" srcset="{{ post.image }}" src="{{ post.image }}" /></a> -->
+
+        {% endfor %}</div></a>
+</section>

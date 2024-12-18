@@ -1,0 +1,134 @@
+  - id: "socials"
+    data:
+    - id: "github"
+      display: "github"
+      link_type: "external"
+      link_url: https://github.com/RHPortfolio
+      fa: "a-brands fa-linkedin"
+      fa_bool: true
+    - id: "facebook"
+      display: "facebook"
+      link_type: "external"
+      link_url: https://www.facebook.com/theRichardHanrahan/
+      logo: ""
+      fa: "fa-brands fa-facebook"
+      fa_bool: true
+    - id: "twitter"
+      display: "x"
+      link_type: "external"
+      link_url: https://x.com/thehitch
+      fa: "fa-brands fa-x-twitter"
+      fa_bool: true
+      logo: ""
+    - id: "substack"
+      display: "substack"
+      link_type: "external"
+      link_url: https://therichardhanrahan.substack.com/
+      logo: ""
+      fa: "fa-solid fa-font-awesome fa-rotate-90"
+      fa_bool: true
+    - id: "bluesky"
+      display: "bluesky"
+      link_type: "external"
+      link_url: https://bsky.app/profile/therichardhanrahan.bsky.social
+      logo: ""
+      fa: "fa-brands fa-bluesky"
+      fa_bool: true
+    - id: "youtube"
+      display: "YouTube"
+      link_type: "external"
+      link_url: https://www.youtube.com/hitchhitchhitch
+      logo: ""
+      fa: "fa-brands fa-youtube"
+      fa_bool: true
+    - id: "bgg"
+      display: "bgg"
+      link_type: "external"
+      link_url: https://www.youtube.com/hitchhitchhitch
+      logo: ""
+      fa_bool: false
+      icon_class: "icon bgg"
+      icon_src: "/assets/BGG.svg"
+
+  - id: "pages"
+    data:
+      - id: "video"
+        display: "video"
+        link_type: "internal"
+        link_url: videos/
+      - id: "jimmy"
+        display: "jimmy"
+        link_type: "internal"
+        link_url: jimmy/
+      - id: "books"
+        display: "books"
+        link_type: "internal"
+        link_url: books/
+      - id: "live"
+        display: "live"
+        link_type: "internal"
+        link_url: live/
+      - id: "podcasts"
+        display: "podcasts"
+        link_type: "internal"
+        link_url: podcasts/
+      - id: "newsletters"
+        display: "newsletters"
+        link_type: "internal"
+        link_url: newsletters/
+  - id: "roles"
+    data:
+      - id: "Performer"
+        display: "Performer"
+        link_type: "internal"
+        link_url: roles/performer/
+      - id: "writer"
+        display: "writer"
+        link_type: "internal"
+        link_url: roles/writer/
+      - id: "game_designer"
+        display: "Games Design"
+        link_type: "internal"
+        link_url: roles/games-designer/
+      - id: "developer"
+        display: "dev"
+        link_type: "internal"
+        link_url: roles/developer/
+      - id: "designer"
+        display: "Visual Design"
+        link_type: "internal"
+        link_url: roles/graphic-designer/
+      - id: "documentary"
+        display: "Documentary"
+        link_type: "internal"
+        link_url: roles/documentary/
+  - id: "sitemap"
+    data:
+      - id: "about"
+        display: "about"
+        link_type: "internal"
+        link_url: about/
+      - id: "press"
+        display: "press"
+        link_type: "internal"
+        link_url: about/press/
+      - id: "gallery"
+        display: "gallery"
+        link_type: "internal"
+        link_url: about/gallery/
+      - id: "cv"
+        display: "latest CV"
+        link_type: "internal"
+        link_url: about/latest-cv/
+      - id: "privacy"
+        display: "privacy policy"
+        link_type: "internal"
+        link_url: about/privacy-policy/
+      - id: "terms"
+        display: "terms"
+        link_type: "internal"
+        link_url: about/terms/
+      - id: "accessibility"
+        display: "accessibility"
+        link_type: "internal"
+        link_url: about/accessibility/

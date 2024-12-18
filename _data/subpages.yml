@@ -30,6 +30,6 @@
 - id: writer
   title: Writer
   order: 900
-  summary: '"This is the writer part of the website. This is where I demonstrate my
-    experience as a writer"'
+  summary: 'This is the writer part of the website. This is where I demonstrate my
+    experience as a writer'
   work_history: []

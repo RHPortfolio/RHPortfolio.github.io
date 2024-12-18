@@ -1,26 +1,6 @@
-{% include _magazine/head.html %}
-<body>
+{% include _magazine/_header.html %}
+  <article>
+    {{ content }}
+  </article>
 
-    <header>
-      {% include _magazine/navbar.html %}
-      {% include _magazine/toggled_element.html %}
-      {% include _magazine/banner_image.html %}
-    </header>
-    <main class="container">
-
-
-      {% include _magazine/prepend_meta.html %}
-
-
-    <article>
-      {{ content }}
-    </article>
-
-  </main>
-
-{% include _magazine/append_tags.html %}
-{% include _magazine/more_content.html %}
-
-{% include scripts.html %}
-</body>
-</html>
+{% include _magazine/_footer_with_more_content.html %}

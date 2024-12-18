@@ -1,0 +1,11 @@
+{% include _magazine/head.html %}
+<body>
+{% assign wordCount = content | number_of_words | plus: 0 %}
+{% assign readingTime = wordCount | divided_by: 200 | round | append: " minutes" %}
+    <header>
+      {% include _magazine/navbar.html %}
+      {% include _magazine/toggled_element.html %}
+      {% include _magazine/banner_image.html %}
+      {% include _magazine/prepend_meta.html category=page.category wordCount=wordCount readingTime=readingTime %}
+    </header>
+    <main class="container">

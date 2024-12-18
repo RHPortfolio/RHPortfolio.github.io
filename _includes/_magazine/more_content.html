@@ -1,13 +1,15 @@
-<section id="more-content">
-  <header>
-    <h2>More Content</h2>
-    </header>
-  <ul>
+{% include _magazine/article-row/row-header.html id='more-content' bg-colour='dark-green text-light' section-title='More Content' %}
 
-      {% for post in site.posts limit: 6 %}
-        {% include _magazine/more_content_article.html category=post.categories date=post.date summary=post.summary title=post.title image=post.thumbnail number=forloop.index %}
+      {% for post in site.posts limit: 2 %}
+      
+        {% include _magazine/more_content_article.html content=post.content category=post.categories date=post.date summary=post.summary url=post.url title=post.title image=post.thumbnail number=forloop.index %}
+        
       {% endfor %}
 
+      <!-- Random Post -->
+      {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
+      {% assign random_post = site.posts[random] %}
 
-  </ul>
-</section>
+      {% include _magazine/more_content_article.html content=random_post.content category=random_post.categories date=random_post.date summary=random_post.summary url=random_post.url title=random_post.title image=random_post.thumbnail number=random %}
+
+{% include _magazine/article-row/row-footer.html %}

@@ -1,8 +1,45 @@
 
-      <footer id="footer" class="gentle-center gap-2">Footer links
+      <footer id="footer" class="gentle-center gap-2">
 
-      {% include back_to_top.html text-css="text-light" %}
+  
+        <section id="footer-links">
+          {% for collection in site.data.footer %}
+            
+            <ul id="footer-{{collection.id}}">
+                {% unless collection.id == "socials" %}
+                <h3>{{ collection.id }}</h3>
+                {% endunless %}
+                
+                  {% if collection.id == "socials" %} 
+                    {% for item in collection.data %}
+                      <li><a href="{{ item.link_url }}"><span>{{ item.display }}</span><i class="fa-regular fa-circle-right"></i></a></li>
+                    {% endfor %}
+                  {% else %}
+
+                    {% for item in collection.data %}
+                    <li>
+                        {% if item.link_type == "internal" %}
+                      
+                          {% assign internal_url = item.link_url %}
+                          <a href="{{ internal_url | relative_url -}}">{{ item.display }}</a>
+                        {% else %}
+                          <a href="{{ item.link_url }}">{{ item.display }}</a>
+                        {% endif %}
+                
+                    </li>
+                  {% endfor %}
+                {% endif %}
+            </ul>
+          {% endfor %}
+          <p id="footer-logo">
+            <span id="footer-logo-the">the</span>
+            <span id="footer-logo-richard">Richard</span><br /><span id="footer-logo-hanrahan">Hanrahan</span>
+            <span id="footer-logo-com">.com</span></p>
+        </section>
+
+    {% include back_to_top.html text-css="text-light" %}
       </footer>
+     
   </div>
 {% include scripts.html %}
 </body>

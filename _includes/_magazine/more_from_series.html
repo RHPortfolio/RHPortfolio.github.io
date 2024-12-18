@@ -1,0 +1,73 @@
+{% include _magazine/article-row/row-header.html id='more-of-this' bg-colour='viridian text-dark' section-title='More of This' %}
+{% assign number_of_articles = site.categories[include.category].size | abs %}
+<!-- {% if number_of_articles <= 2 %} THERE ARE TWO OR LESS ARTICLES {% endif %}
+{% if number_of_articles >= 3 %} THERE ARE MORE THAN THREE ARTICLES {% endif %} -->
+
+{% if number_of_articles >= 3 %}
+
+	<!-- The current title is '{{ include.current_title }}'' -->
+	{% for posts in site.categories[include.category] %}
+	
+		{% if posts.title == include.current_title %}
+
+			{% if forloop.first %}
+				{% assign next = forloop.length | abs | minus: 1 %}
+				{% assign prev = forloop.index0 | plus: 1 %}
+			{% elsif forloop.last %}
+				{% assign next = forloop.index0 | minus: 2 %}
+				{% assign prev = forloop.index0 | minus: 1 %}
+			{% else %}
+				{% assign next = forloop.index0 | minus: 1 %}
+				{% assign prev = forloop.index0 | plus: 1 %}
+			{% endif %}
+
+			{% assign next-content = site.categories[include.category][next].content | uri_escape | strip %}
+			{% assign next-category = include.category %}
+			{% assign next-date = site.categories[include.category][next].date %}
+			{% assign next-summary = site.categories[include.category][next].summary %}
+			{% assign next-url = site.categories[include.category][next].url %}
+			{% assign next-title = site.categories[include.category][next].title %}
+			{% assign next-thumbnail = site.categories[include.category][next].thumbnail %}
+
+			{% include _magazine/more_content_article.html 
+				content=next-content 
+				category=next-category
+				date=next-date
+				summary=next-summary
+				url=next-url
+				title=next-title
+				image=next-thumbnail
+				number=1 %}
+
+			{% assign prev-content = site.categories[include.category][prev].content | uri_escape | strip %}
+			{% assign prev-category = include.category %}
+			{% assign prev-date = site.categories[include.category][prev].date %}
+			{% assign prev-summary = site.categories[include.category][prev].summary %}
+			{% assign prev-url = site.categories[include.category][prev].url %}
+			{% assign prev-title = site.categories[include.category][prev].title %}
+			{% assign prev-thumbnail = site.categories[include.category][prev].thumbnail %}
+
+			{% include _magazine/more_content_article.html 
+				content=prev-content 
+				category=prev-category
+				date=prev-date
+				summary=prev-summary
+				url=prev-url
+				title=prev-title
+				image=prev-thumbnail
+				number=2 %}
+
+		{% endif %}
+
+	{% endfor %}
+{% endif %}
+
+<!-- CONSOLE LOG
+currentCategory: {{ include.category }}
+number_of_articles: {{ number_of_articles }}
+nextIndex {{ next }}
+previousIndex {{ previous }}
+nextTitle {{ leftPostTitle }}
+previousTitle {{ rightPostTitle }} -->
+
+{% include _magazine/article-row/row-footer.html %}

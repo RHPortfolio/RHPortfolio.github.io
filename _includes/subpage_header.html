@@ -1,5 +1,19 @@
 <header class="subpage-header">
-  <h2 id="{{include.id}}-page-title" class="scroll-snap">
+  {% assign _bg = include.bg %}
+  {% case _bg %}
+    {% when "dark-green" %}
+    {% assign text-class = "text-light" %}
+    {% when "platinum" %}
+    {% assign text-class = "text-dark" %}
+    {% when "brunswick" %}
+    {% assign text-class = "text-light" %}
+    {% when "viridian" %}
+    {% assign text-class = "text-dark" %}
+    {% when "cambridge" %}
+    {% assign text-class = "text-light" %}
+  {% endcase %}
+
+  <h2 id="{{include.id}}-page-title" class="scroll-snap {{text-class}}">
     {{include.title}}
   </h2>
 </header>
