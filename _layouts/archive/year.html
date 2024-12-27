@@ -1,0 +1,16 @@
+{% include _magazine/_header.html %}
+  
+<section class="recent-posts">
+<ul class="recent-posts">
+{% for item in site.posts %}
+<!-- {% if post.categories contains page.category or post.category == page.category %} -->
+    {% assign category = item.categories[0] | default: "blog" %}
+    {% assign date = item.date | date_to_string %}
+    {% include post-list-item.html image=item.image title=item.title url=item.url summary=item.summary date=date tags=item.tags category=category %}
+<!-- {% endif %}     -->
+
+{% endfor %}
+</ul>
+</section>
+
+{% include _magazine/_footer.html %}

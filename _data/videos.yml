@@ -1,0 +1,66 @@
+- id: takestwo
+  title: 'Me3 Comedy... It Takes Two'
+  projectid: me3comedy
+  imgid: me3takestwo
+  director: true
+  link: https://youtu.be/ygoPEocxfTM?si=lp70GctBKyfrOKmo
+  type: comedy
+  category: sketch
+  description: Sketch which focuses on the experience of a young set of twins embarking on a career in Hollywood working for Stanley Kubrick.
+- id: whatdowomendo
+  title: 'Me3 Comedy... What do women do in there?'
+  projectid: me3comedy
+  imgid: me3whatdo
+  director: true
+  link: https://youtu.be/R1sJdEQ9TKo?si=Y3kbCEysyvo2D0zb
+  type: comedy
+  category: sketch
+  description: Sketch that takes an intimate view inside the toilet habits of women.
+- id: ididthisdoc
+  projectid: ididthisdoc
+  imgid: ididthis1
+  title: 'I Did This (2013)'
+  director: true
+  link: https://youtu.be/EYJbwj6CIhc
+  type: academic
+  category: documentary
+  description: PhD documentary about protest in a post-modern world.
+- id: livesetpan
+  imgid: livepan1
+  title: Pan @ Peter Pancakes
+  director: "n/a"
+  link: https://youtu.be/EWFt3ELmcI0
+  type: comedy
+  category: live
+- id: isdoingthismyway
+  imgid: franksinatra
+  projectid: isdoingthis
+  title: Frank Sinatra - My Way (From Final Performance of *Richard Hanrahan Is Doing This*)
+  director: "n/a"
+  link: https://www.youtube.com/watch?v=YEsX1qmHHCs
+  type: comedy
+  category: live
+- id: ididthislive
+  imgid: ididthislive1
+  projectid: ididthislive
+  title: I Did This Live (Oct 17th 2013, Full Performance)
+  director: true
+  link: https://youtu.be/n492Sz1tCfA
+  type: academic
+  category: live
+- id: ididthiskarma
+  imgid: karmastill
+  projectid: ididthisdoc
+  title: Karma (from I Did This)
+  link: https://youtu.be/hkZ8kVypeFw
+  director: true
+  type: academic
+  category: documentary
+- id: ididthisqa
+  imgid: idtqna
+  projectid: ididthisdoc
+  title: Q + A with myself
+  link: https://www.youtube.com/watch?v=GwSMyWdMQ2U
+  director: true
+  type: academic
+  category: documentary

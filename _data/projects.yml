@@ -1,0 +1,29 @@
+- id: ididthisdoc
+  title: I Did This (Documentary)
+  copy: I Did This
+  link: /projects/i-did-this
+  when: Summer 2013
+  summary: As part of my PhD studies I produced a auto-ethnographic documentary interrogating protest and performance, and filmed myself trying to 'change the world' through stand-up comedy and *clowning*.
+- id: ididthislive
+  title: I Did This (Live)
+  copy: I Did This
+  when: Autumn 2013
+  link: /projects/i-did-this#live
+  summary: As part of my PhD documentary 'I Did This', I did a one-off 2 hour live show within the documentary
+- id: isdoingthis
+  title: Is Doing This
+  copy: Richard Hanrahan Is Doing This
+  when: Fringe 2018
+  link: /live/is-doing-this
+  summary: toying with the frayed edges of performance and comedy, after years floundering trying to come up with material I think they would want, I finally just asked audiences directly what they found funny, and created a show around those responses. Part improv, part multimedia extravaganza, the show evolved each day to positive critical response.
+- id: anaudiencewith
+  title: An Audience With... That Never Was, But Is "An Audience With... Jimmy Whobblers" (with Jimmy Whobblers)
+  copy: An Audience With... Jimmy Whobblers
+  when: Fringe 2019
+  link: /live/an-audience-with 
+  summary: legend of the comedy circuit Jimmy Whobblers, deceased, re-enacted through the magic of stage hologram technology to entertain audiences with comedy like comedy used to be.
+- id: me3comedy
+  title: Me3 Comedy
+  copy: Me3 Comedy
+  when: "2013-2015 ish"
+  link: /projects/me3comedy

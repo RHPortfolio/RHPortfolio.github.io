@@ -4,13 +4,13 @@ The following projects can also be found on this site:
     {% when "developer" %}
     {% for post in site.tags.developer limit:15 %}
       {% unless post.tags contains "highlighted" %}
-      <li class="post-list">{{post.title}}</li>
+      <li class="display-list">{{post.title}}</li>
       {% endunless %}
     {% endfor %}
     {% when "product" %}
     {% for post in site.tags.product limit:15 %}
       <!-- {% unless post.tags contains "highlighted" %} -->
-      <li class="post-list">{{post.title}}</li>
+      <li class="display-list">{{post.title}}</li>
       <!-- {% endunless %} -->
     {% endfor %}
     {% else %}

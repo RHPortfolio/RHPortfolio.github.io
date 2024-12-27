@@ -1,0 +1,9 @@
+<ul id="video-wall">
+	{% for item in site.data.videos %}
+
+		{% assign loadedImage = site.data.images | where:"id", item.imgid | first %}
+		{% assign project = site.data.projects | where:"id", item.projectid | first %}
+
+		{% include video-wall-item.html id=item.id category=item.category image=loadedImage.image internal=loadedImage.internal  type=item.type description=item.description url=item.link title=item.title directed=item.director project=project %}
+	{% endfor %}
+</ul>

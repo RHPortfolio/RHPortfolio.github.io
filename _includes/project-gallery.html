@@ -1,0 +1,13 @@
+<ul id="gallery-list">
+
+{% assign filtered_images = site.data.images | where: "projectid", include.projectid %}
+
+
+{% for image in filtered_images %}
+	{% if image.internal == true %}
+		<li><img src="{{ image.image | absoulte_url }}" class="gallery-image" /></li>
+	{% else %}
+		<li><img src="{{ image.image }}" class="gallery-image" /></li>
+	{% endif %}
+{% endfor %}
+</ul>

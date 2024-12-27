@@ -1,0 +1,17 @@
+<li class="display-list-item directed-{{ include.director }}" >
+
+<a href="{{ include.url }}">
+	{% if include.internal == true %}
+
+<img src="{{include.image | absolute_url}}" class="display-list-item-image shaded" />
+{% else %}
+<img src="{{include.image}}" class="display-list-item-image shaded" />
+{% endif %}</a>
+<section class="display-list-item-copy shaded {{include.category}}">
+	<a href="{{ include.url }}"><h2>{{ include.title }} <span class="category"><wbr />// {% if include.category == "alternative-wordbook" %}extract{% else %}{{include.category}}{% endif %}</span> </h2></a>
+	<p class="display-list-iyear">{{ include.year }}</p>
+	<p class="desktop">{{ include.description }}</p>
+	<p ><a href="{{ include.url }}" style="text-decoration: underline;">Link to watch it now</a>. For more information see the <a href="{{ include.project.link | absolute_url}}">{{include.project.title}}</a></p>
+</section>
+
+</li>

@@ -2,7 +2,6 @@
 layout: pages/roles
 title: "Roles"
 image: ../../assets/images/projects/i-did-this-1.jpg
-banner: ../../assets/images/projects/i-did-this-1.jpg
 category: about
 ---
 {% include snippets/page-under-construction.md %}

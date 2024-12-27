@@ -65,4 +65,4 @@ So I’ve not performed since the Edinburgh Festival in 2019. I still haven’t 
 So that’s my current status as of October 2024. Please feedback if this is too much, or if you’d prefer I syphon of various parts of what I’m planning to write into different sections or something. And, I guess, strap in!
 
 
-{% include snippets/roundup-intro.md %} 
+{% include snippets/roundup-outro.md %} 

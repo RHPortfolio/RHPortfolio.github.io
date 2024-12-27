@@ -1,0 +1,16 @@
+<li class="display-list-item" >
+<a href="{{ include.url }}">
+<img src={{include.image}} class="display-list-item-image shaded" />
+<section class="display-list-item-copy shaded {{include.category}}">
+	<a href="{{ include.url }}"><h2>{{ include.title }} <span class="category"><wbr />// {% if include.category == "alternative-wordbook" %}extract{% else %}{{include.category}}{% endif %}</span> </h2></a>
+	<p class="display-list-date">{{ include.date }}</p>
+	<p class="desktop">{{ include.summary }}</p>
+	<ul class="tags-list desktop">
+	{% for tag in include.tags | reverse | limit: 3 %}
+		<li class="tag">{{ tag }}</li>
+	{% endfor %}
+</ul>
+
+</section>
+
+</li>

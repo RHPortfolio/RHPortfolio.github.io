@@ -2,7 +2,8 @@
     {% include front_title_page.html %}
 
     <!-- Dynamic SubPage Creation -->
-      {% for subpage in site.data.front-rows %}
+    {% assign front_rows = site.data.front-rows | sort: "order" %}
+      {% for subpage in front_rows %}
         {% include _subpage.html subpage=subpage %}
       {% endfor %}
 

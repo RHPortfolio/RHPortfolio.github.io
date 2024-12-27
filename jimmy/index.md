@@ -3,7 +3,6 @@ layout: pages/jimmy
 title: "Jimmy Jimmy immy a man after midnight
 won't somebody help be chase the shadows away?"
 image: ../../assets/images/jimmy/jimmy_banner.png
-banner: ../assets/images/jimmy/jimmy_banner.png
 ---
 # Who is Jimmy Whobblers?
 {% assign float_image_1 = "/assets/images/jimmy/jimmy-in-action.jpg" | absolute_url%}

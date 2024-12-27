@@ -293,13 +293,16 @@ color: #112B23;
   display: block;
   height: 30vh;
   overflow: hidden;
-  width: 26vw;
+  flex: 1;
   margin: 1vw;
+  width: 26vw;
+  min-width: 26vw;
 }
 
 @media only screen and (width < 1024px) {
   .subpage-post {
     width: 90vw !important;
+    min-width: 100% !important;
     margin: 2vw 0 2vh 0;
   }
 
@@ -317,6 +320,11 @@ color: #112B23;
   background-blend-mode: overlay;
   background: transparent;
   transition: 2s;
+}
+
+.highlight { 
+  width: 100%;
+  flex: 2 auto; 
 }
 
 .subpage-post:hover img {
@@ -483,10 +491,10 @@ list-style: none !important;
   list-style: circle; }
 
 #footer-socials > li {
-  list-style: none;
+  list-style: none !important;
   padding: 0.4vh 0.5vw;
   flex-grow: 1;
-    min-width: calc(9vw);
+    min-width: calc(8vw);
     margin-right: 1vw;
     border: rgb(40 71 59) 1px dashed;
     margin-bottom: 1vh;
@@ -622,8 +630,6 @@ list-style: none !important;
   text-align: right;
   transform: translate(36px, 23px);
 }
-
-
 
 .horizontal {
   /* background:  #00695C; */

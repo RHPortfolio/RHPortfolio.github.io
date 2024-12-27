@@ -44,7 +44,7 @@
     - id: "bgg"
       display: "bgg"
       link_type: "external"
-      link_url: https://www.youtube.com/hitchhitchhitch
+      link_url: https://boardgamegeek.com/user/DeeDooGames
       logo: ""
       fa_bool: false
       icon_class: "icon bgg"

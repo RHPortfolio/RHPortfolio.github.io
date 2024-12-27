@@ -1,8 +1,7 @@
 ---
 layout: pages/collection
 title: "Books"
-image: ../../assets/images/projects/i-did-this-1.jpg
-banner: ../../assets/images/projects/i-did-this-1.jpg
+image: ../../assets/images/rh-books.jpeg
 category: about
 ---
 {% include snippets/page-under-construction.md %}

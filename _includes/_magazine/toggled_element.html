@@ -2,7 +2,7 @@
 <section id="about" class="toggled-element">
   <div class="wide-container">
     <header>
-     
+
         {% assign footer-data = site.data.footer %}
 
           {% assign _socials = footer-data | where: "id", "socials" | first%}
@@ -13,7 +13,15 @@
           <ul id="about-links">            
             {% for entry in _pages.data %}
               
-              <li>{{entry.display}}</li>
+              <li>
+              {% if entry.link_type == "internal" %}
+                {% assign url = entry.link_url %}
+                <a href="{{entry.link_url | absolute_url}}">
+                {% else %}
+                <a href="{{entry.link_url}}">
+              {% endif %}
+
+                {{entry.display}}</a></li>
             
             {% endfor %}
         
@@ -22,9 +30,19 @@
 
             {% for entry in _socials.data %}
               {% if entry.fa_bool == true %}
-                <i class="{{entry.fa}}"></i>
+                {% if entry.link_type == "internal" %}
+                  <a href="{{entry.link_url | absolute_url}}">
+                  {% else %}
+                  <a href="{{entry.link_url}}">
+                {% endif %}
+                <i class="{{entry.fa}}"></i></a>
               {% else %}
-                <img class="{{entry.icon_class}}" src="{{entry.icon_src}}" />
+                {% if entry.link_type == "internal" %}
+                  <a href="{{entry.link_url | absolute_url}}">
+                  {% else %}
+                  <a href="{{entry.link_url}}">
+                {% endif %}
+                <img class="{{entry.icon_class}}" src="{{entry.icon_src}}" /></a>
               {% endif %}
             {% endfor %}
           </div>
@@ -35,7 +53,11 @@
         
         {% for entry in _roles.data %}
           
-          <li>{{entry.display}}</li>
+          <li>{% if entry.link_type == "internal" %}
+                  <a href="{{entry.link_url | absolute_url}}">
+                  {% else %}
+                  <a href="{{entry.link_url}}">
+                {% endif %}{{entry.display}}</a></li>
 
         {% endfor %}
 
@@ -47,7 +69,11 @@
         <ul id="about-footer">
           {% for entry in _sitemap.data %}
           
-          <li>{{ entry.display }}</li>
+          <li>{% if entry.link_type == "internal" %}
+                  <a href="{{entry.link_url | absolute_url}}">
+                  {% else %}
+                  <a href="{{entry.link_url}}">
+                {% endif %}{{ entry.display }}</a></li>
         
           {% endfor %}
         </ul>
