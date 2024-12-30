@@ -13,6 +13,7 @@ tags:
 - No JS
 - Website Design
 - Portfolio
+published: false
 ---
 
 This is the website you are currently looking at. I built this as an easy to put together project that could tidily demonstrate my ability as a front end developer, without being all flashy and dancing as you often see.

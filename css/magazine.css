@@ -456,7 +456,7 @@ td img {
 }
 
 .meta section {
-  padding: 0 15vw;
+  padding: 1vh 15vw;
 }
 
 
@@ -467,9 +467,8 @@ td img {
 }
 
   .meta section {
-    padding: 0 5vw;
+    padding: 2vh 5vw;
   }
-
 }
 
 .summary {
@@ -954,6 +953,7 @@ background: white;
 .wrds:nth-child(even) { background: hsla(162, 41%, 58%, 1); }
 .blog:nth-child(odd) { background: hsl(157, 28%, 41%, 1) }
 .blog:nth-child(even) { background: hsl(157, 38%, 41%, 1) }
+.extracts{ background: hsl(150, 5%, 92%, 1)}
 .alternative-wordbook{ background: hsl(150, 5%, 92%, 1)}
 .shorts{background: hsl(157, 28%, 22%, 1)}
 .documentary{background: hsl(157, 28%, 22%, 1)}
@@ -964,8 +964,10 @@ background: white;
 
 
 .shorts > h2{ color: white; }
-.shaded.shorts h2 span.category { color: hsla(162, 31%, 58%, 1); }
+.alternative-wordbook h2 span.category { color: hsla(157, 28%, 22%, 0.3) !important; }
 .alternative-wordbook > * { color: black }
+.extracts h2 span.category { color: hsla(157, 28%, 22%, 0.3) !important; }
+.extracts > * { color: black }
 
 .tags-list {
   align-items: center;
@@ -995,7 +997,7 @@ background: white;
     display: inline;
 }
 
-.display-list-item:nth-child(even) > * > .tags-list li:nth-child(odd) { background: hsla(150, 5%, 92%, 1);}
+.display-list-item:nth-child(even) > * > .tags-list li:nth-child(odd) { background: hsl(157, 18%, 31%, 1);;}
 .display-list-item:nth-child(even) > * > .tags-list li:nth-child(even) { background: hsl(157, 18%, 21%, 1);}
 .display-list-item:nth-child(odd) > * > .tags-list li:nth-child(odd) { background: hsl(157, 18%, 21%, 1); }
 .display-list-item:nth-child(odd) > * > .tags-list li:nth-child(even) { background: hsl(157, 18%, 31%, 1);}
@@ -1007,15 +1009,14 @@ background: white;
 }
 
 .display-list-item-copy h2 span.category {
-  opacity: 0.2;
-  color:  hsla(150, 5%, 92%, 1);
+  color: hsla(150, 5%, 92%, 0.6);
 }
 
 .display-list-item-copy p {
   margin: 0 0 1vh 0;
-    font-size: 1rem;
-    line-height: 1.2rem;
-        padding: 0 1vw;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding: 0vh 4vw;
 }
 
 @media only screen and (width < 1024px) {

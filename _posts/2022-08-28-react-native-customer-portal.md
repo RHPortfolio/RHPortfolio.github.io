@@ -14,6 +14,7 @@ tags:
 - highlighted
 - energy
 - react-native
+published: false
 ---
 
 This project was an internal development piece to provide an accessible and modern customer portal for an energy industry start-up. I was the lead developer on a small development team focused on this project, and using react-native, we built an iOS first cross-platform app that would interface with a bespoke industry CRM using a custom API wrapper, meaning aspects of data and security were mostly handled elsewhere. Our focus was on providing simple customer experience to alleviate customer service volume. As the business priorities changed, we focused on deploying this app as browser first, utilising react-native-web to bring the same simple code to desktop and mobile browsers, but as we approached delivery, the company folded due to external market pressures.

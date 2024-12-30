@@ -1,4 +1,21 @@
 {% include _magazine/head.html %}
+
+{% if page.summary %}
+  {% assign summary = page.summary %}
+{% else %}
+  {% assign summary = "another fine piece of text for us all to enjoy" %}
+{% endif %}
+
+
+{% if page.image %}
+  {% assign image = page.image %}
+{% else %}
+  {% assign image = "./assets/images/rh-shares.jpg" %}
+{% endif %}
+
+
+{% include _meta-twitter-card.html title=page.title summary=summary image=image %}
+
 <body>
 {% assign wordCount = content | number_of_words | plus: 0 %}
 {% assign readingTime = wordCount | divided_by: 200 | round | append: " minutes" %}

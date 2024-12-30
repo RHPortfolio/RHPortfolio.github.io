@@ -13,6 +13,7 @@ tags:
 - product
 - highlighted
 - magazine design
+published: false
 ---
 
 In the previous blog, we quickly analyzed a successful, clean magazine site ([here](https://www.vice.com/en/article/qjkv9q/an-oral-history-of-tim-currys-escape-to-the-one-place-uncorrupted-by-capitalism)) and attempted to understand what made it tick. In this blog post, we will look at what an MVP might look like for our approximation, and attempt to prioritize the work that needs to be done.

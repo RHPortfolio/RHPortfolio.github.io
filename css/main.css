@@ -390,8 +390,26 @@ color: #112B23;
   }
 }
 
+.placeholder-banner {
+ 
+  text-align: center;
+  display: flex;
+  color: white;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: 'Abril Fatface';
+  font-weight: 400;
+  height: 20vh;
+  overflow: hidden;
+  margin: 1vw;
+  min-width: 26vw;
+  width: 100%;
+  line-height: 4rem;
+  background: url('../../assets/images/rh-books.jpeg') center 20%/cover no-repeat;
 
-
+}
 
 
 #developer {

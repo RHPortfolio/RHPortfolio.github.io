@@ -14,6 +14,7 @@ tags:
 - highlighted
 - product
 - magazine design
+published: false
 ---
 
 It struck me as difficult to build a portfolio of product work, and so I decided to quickly put together a project. While building my central professional portfolio, it struck me that the site's post were currently unthemed - but that I could quite effectively build a magazine style site to house that content as if it were a separate project. To begin, we quickly analyzed a successful, clean magazine site: [Vice](https://www.vice.com/en/article/qjkv9q/an-oral-history-of-tim-currys-escape-to-the-one-place-uncorrupted-by-capitalism).

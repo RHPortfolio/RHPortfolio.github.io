@@ -8,13 +8,14 @@
     <section class="flex-row align-center cambridge">
         {% if page.category == "about" %}
         {% include _breadcrumbs.html %}
+        {% else %}
+        {% include _cat-breadcrumbs.html %}
         {% endif %}
       <div class="date">{{page.date | date: "%A, %b %d, %Y" }}</div>
       <div id="meta-socials" class="flex-row align-center">
         <i class="icon fa-brands fa-twitter"></i>
         <i class="icon fa-brands fa-facebook-f"></i>
         <i class="icon fa-solid fa-link"></i>
-        </p>
       </div>
 
     </section>

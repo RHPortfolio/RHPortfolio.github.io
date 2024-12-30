@@ -1,7 +1,7 @@
 {% include _magazine/_header.html %}
   
 
-{% assign filtered_posts = site.posts | where: "categories", page.category-filter %}
+{% assign filtered_posts = site.posts | where: "categories", page.category-filter | where: "source", page.sources-filter %}
 <section class="recent-posts">
 <ul class="recent-posts">
 {% for item in filtered_posts %}

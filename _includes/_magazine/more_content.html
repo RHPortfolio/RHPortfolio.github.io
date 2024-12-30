@@ -1,15 +1,21 @@
 {% include _magazine/article-row/row-header.html id='more-content' bg-colour='dark-green text-light' section-title='More Content' %}
 
-      {% for post in site.posts limit: 2 %}
+ {% assign filtered_site_posts = site.posts | where_exp: "post", "post.title != page.title" %}
+
+      {% for post in filtered_site_posts limit: 2 %}
       
-        {% include _magazine/more_content_article.html content=post.content category=post.categories date=post.date summary=post.summary url=post.url title=post.title image=post.thumbnail number=forloop.index %}
+        {% unless post.title == page.title %}
+        {% include _magazine/more_content_article.html content=post.content category=post.categories date=post.date summary=post.summary url=post.url title=post.title image=post.image number=forloop.index %}
+        {% endunless %}
         
       {% endfor %}
 
       <!-- Random Post -->
-      {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
-      {% assign random_post = site.posts[random] %}
+      <!-- {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %} -->
+      <!-- {% assign random_post = site.posts[random] %} -->
 
-      {% include _magazine/more_content_article.html content=random_post.content category=random_post.categories date=random_post.date summary=random_post.summary url=random_post.url title=random_post.title image=random_post.thumbnail number=random %}
+      {% assign random_post = site.posts | sample: 1 %}
+
+      {% include _magazine/more_content_article.html content=random_post.content category=random_post.categories date=random_post.date summary=random_post.summary url=random_post.url title=random_post.title image=random_post.image number=random %}
 
 {% include _magazine/article-row/row-footer.html %}

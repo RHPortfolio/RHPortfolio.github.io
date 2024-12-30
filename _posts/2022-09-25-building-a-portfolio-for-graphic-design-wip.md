@@ -12,7 +12,9 @@ summary: Using Server Side Rendering to produce a lightweight design portfolio
 tags:
 - developer
 - highlighted
+published: false
 ---
+
 
 When I came to build a basic portfolio for my graphic design work, I wanted to highlight the range of content in a visually appealing way, while not being weighed down by overly complex code or animation. Similarly, I wanted to ensure this project brushed off my react skills, while maintaining adherence to using pure CSS techniques. This article highlights some of the choices I made as a designer and developer, as well as highlighting some interesting features. 
 
