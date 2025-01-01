@@ -3,6 +3,7 @@
   <ul class="subpage-posts mb-5">
    
    {% assign all_posts = site.posts | concat: site.extracts | sort: 'date' | reverse %}
+   {% assign all_excerpts = site.extracts | sort: 'date' | reverse %}
    {% assign _subpage = (subpage.id | downcase) %}
    	{% case _subpage %}
      {% when "latest" %}
@@ -37,7 +38,7 @@
         {% endfor %}
 
       {% when "extracts" %}
-      {% for post in site.extracts limit:6 %}
+      {% for post in all_excerpts limit:6 %}
           {% include subpage_highlighted_image.html
             url=post.url
             title=post.title
