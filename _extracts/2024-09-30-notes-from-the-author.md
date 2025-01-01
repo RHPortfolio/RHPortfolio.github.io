@@ -2,6 +2,7 @@
 layout: writing
 title: Notes from the author
 date: 2024-09-30 22:51:47 UTC
+source: "alternative-wordbook"
 category: "alternative-wordbook"
 banner: https://substack-post-media.s3.amazonaws.com/public/images/1291570b-0f1b-4465-b63b-6d8d16681b31_600x450.jpeg
 thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/1291570b-0f1b-4465-b63b-6d8d16681b31_600x450.jpeg

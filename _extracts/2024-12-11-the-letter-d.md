@@ -2,7 +2,7 @@
 layout: writing
 title: The Letter D
 date: 2024-12-11 10:30:00 UTC
-categories: "extracts"
+categories: "alternative-wordbook"
 source: "alternative-wordbook"
 banner: https://substack-post-media.s3.amazonaws.com/public/images/58922d09-7040-4bc5-a689-8d96f7e03ee6_1456x816.jpeg
 thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/58922d09-7040-4bc5-a689-8d96f7e03ee6_1456x816.jpeg

@@ -2,8 +2,8 @@
 layout: writing
 title: "The Letter A"
 date: 2024-10-11 10:00:00 UTC
-categories: "extracts"
 source: "alternative-wordbook"
+categories: "alternative-wordbook"
 banner: https://substack-post-media.s3.amazonaws.com/public/images/9c303184-14dc-405a-bf21-438797065fa1_1024x1024.jpeg
 thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/9c303184-14dc-405a-bf21-438797065fa1_1024x1024.jpeg
 banner_caption: "" 

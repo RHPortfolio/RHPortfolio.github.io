@@ -52,7 +52,7 @@ Some new words or redefinitions of old words which I am pitching as an at least 
 
 These are extracts from my previously released Alternative Wordbook, and in future months, other to be released written works.
 
-- [The Letter C]({% link _posts/2024-11-11-the-letter-c.md %}) - I remember writing this one and really banging my head trying to work out what the hell I was going to pretend to care about this letter. The resulting instructional essay was just about worth it. But again, see my last summary post, the later essays in the book - damned again by the ordering of letters in the alphabet!! (see my essay on the order of letters in the alphabet)
+- [The Letter C]({% link _extracts/2024-11-11-the-letter-c.md %}) - I remember writing this one and really banging my head trying to work out what the hell I was going to pretend to care about this letter. The resulting instructional essay was just about worth it. But again, see my last summary post, the later essays in the book - damned again by the ordering of letters in the alphabet!! (see my essay on the order of letters in the alphabet)
 
 # Quick Recommendations
 

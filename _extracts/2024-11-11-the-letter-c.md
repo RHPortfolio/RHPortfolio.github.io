@@ -2,7 +2,7 @@
 layout: writing
 title: The Letter C
 date: 2024-11-11 22:51:47 UTC
-categories: "extracts"
+categories: "alternative-wordbook"
 source: "alternative-wordbook"
 banner: https://substack-post-media.s3.amazonaws.com/public/images/c6c2f8d6-e8e2-4ddf-8787-54d6ade9b8a4_1024x1024.png
 thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/c6c2f8d6-e8e2-4ddf-8787-54d6ade9b8a4_1024x1024.png

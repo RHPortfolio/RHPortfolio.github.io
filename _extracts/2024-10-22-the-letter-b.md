@@ -2,7 +2,7 @@
 layout: writing
 title: The Letter B
 date: 2024-10-22 10:30:00 UTC
-categories: "extracts"
+categories: "alternative-wordbook"
 source: "alternative-wordbook"
 banner: https://substack-post-media.s3.amazonaws.com/public/images/8e2872a6-31f0-4dc4-a726-74229243b503_1024x1024.jpeg
 thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/8e2872a6-31f0-4dc4-a726-74229243b503_1024x1024.jpeg

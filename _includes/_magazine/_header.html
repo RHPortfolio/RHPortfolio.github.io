@@ -13,8 +13,10 @@
   {% assign image = "./assets/images/rh-shares.jpg" %}
 {% endif %}
 
+{% assign url = page.url | absolute_url }}
 
 {% include _meta-twitter-card.html title=page.title summary=summary image=image %}
+{% include _meta-fb.html title=page.title description=summary image=image url=url %}
 
 <body>
 {% assign wordCount = content | number_of_words | plus: 0 %}
