@@ -6,7 +6,6 @@
   /* .mobile { display: block !important;} */
 }
 
-/* Mobile Display, Desktop Classes Hidden */
 @media only screen and (width >= 1024px) and (orientation : landscape) {
   /* .desktop { display: block !important; } */
   .mobile { display: none !important;}

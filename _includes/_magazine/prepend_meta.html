@@ -1,23 +1,19 @@
 <section class="meta">
-  <!-- <h1>{{page.title}}</h1> -->
-    <!-- <p class="summary">{{page.summary}}</p> -->
-    <!-- <p id="meta-author" class="mt-3">
-      by <strong>Richard Hanrahan</strong>
-    </p> -->
-    <!-- <hr /> -->
+
+    {% assign url = page.url | absolute_url %}
+    {% assign title = page.title %}
     <section class="flex-row align-center cambridge">
         {% if page.category == "about" %}
-        {% include _breadcrumbs.html %}
+          {% include _breadcrumbs.html %}
         {% else %}
-        {% include _cat-breadcrumbs.html %}
+          {% include _cat-breadcrumbs.html %}
         {% endif %}
       <div class="date">{{page.date | date: "%A, %b %d, %Y" }}</div>
       <div id="meta-socials" class="flex-row align-center">
-        <i class="icon fa-brands fa-twitter"></i>
+        <a href="{% include _magazine/_twitter-intent-url.html url=url title=title %}"><i class="icon fa-brands fa-twitter"></i></a>
         <i class="icon fa-brands fa-facebook-f"></i>
         <i class="icon fa-solid fa-link"></i>
       </div>
 
     </section>
-    <!-- <hr /> -->
 </section>
