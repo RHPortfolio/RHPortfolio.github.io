@@ -11,7 +11,7 @@
       <div class="date">{{page.date | date: "%A, %b %d, %Y" }}</div>
       <div id="meta-socials" class="flex-row align-center">
         <a href="{% include _magazine/_twitter-intent-url.html url=url title=title %}"><i class="icon fa-brands fa-twitter"></i></a>
-        <i class="icon fa-brands fa-facebook-f"></i>
+        <a href="{% include _magazine/_fb-intent-url.html url=url %}"><i class="icon fa-brands fa-facebook-f"></i></a>
         <i class="icon fa-solid fa-link"></i>
       </div>
 
