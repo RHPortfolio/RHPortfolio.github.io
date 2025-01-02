@@ -3,7 +3,7 @@ layout: writing
 title: Flazzying
 date: 2025-01-01 10:15:00 UTC
 categories: wrds
-image: https:substack-post-media.s3.amazonaws.com/public/images/2fb69b00-ae1b-4a76-8909-ca73b22b4245_2912x1632.jpeg
+image: https://substack-post-media.s3.amazonaws.com/public/images/2fb69b00-ae1b-4a76-8909-ca73b22b4245_2912x1632.jpeg
 summary: Fer-laz-zee-yin-g(g) (noun.)
 tags:
 - writing
