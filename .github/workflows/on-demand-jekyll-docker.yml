@@ -5,13 +5,12 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v1
-    - name: Jekyll Publish Drafts
-      uses: soywiz/github-action-jekyll-publish-drafts@v2
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        jekyll_path: ./
-        branch: main
+    - uses: actions/checkout@v4
+    - name: Deploy Jekyll Site with Ruby 3.3.x
+      uses: sujaykundu777/jekyll-deploy-action@1.0.5
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
