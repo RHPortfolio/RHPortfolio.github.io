@@ -1087,3 +1087,21 @@ background: white;
     width: auto;
     padding: 0;
     border: none; }
+
+/* Footnotes */
+.footnotes > ol > li {
+  list-style: decimal;
+  list-style-position: inside;
+  margin: 0vh 1vw 3vh 0vw;
+}
+
+li[role=doc-endnote] > p {
+  display: inline;
+}
+
+.footnote{
+  vertical-align: super;
+    font-size: 0.8em;
+    margin-left: 2px;
+    line-height: 0;
+}
