@@ -1,5 +1,5 @@
 # File: .github/workflows/refresh.yml
-name: Refresh
+name: Daily Cron Job - API Force Build
 
 on:
   schedule:
