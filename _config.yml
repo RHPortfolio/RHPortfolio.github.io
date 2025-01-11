@@ -52,6 +52,11 @@ defaults:
   #     category: "alternative-wordbook"
   #   values:
   #     permalink: /extracts/alternative-wordbook/:title
+  - scope:
+      category: "wrds"
+    values:
+      layout: definition
+      permalink: /:categories/:title
 
 collections:
   extracts:

@@ -1,22 +1,17 @@
----
-layout: default
-title: Archive
----
 
-<!-- Begin List Posts
-================================================== -->
+{% include _magazine/_header.html %}
+  
 <section class="recent-posts">
-<div class="section-title mt-2">
-    <h2>{{ page.title }}</h2>
-</div>
-<div class="row listrecent">
-
-{% for post in site.posts %}
-{% if post.tags contains page.tag or post.tag == page.tag %}
-    {% include postbox.html %}
-{% endif %}    
+<ul class="recent-posts">
+{% for item in site.posts %}
+<!-- {% if post.categories contains page.category or post.category == page.category %} -->
+    {% assign category = item.categories[0] | default: "blog" %}
+    {% assign date = item.date | date_to_string %}
+    {% include post-list-item.html image=item.image title=item.title url=item.url summary=item.summary date=date tags=item.tags category=category %}
+<!-- {% endif %}     -->
 
 {% endfor %}
-
-</div>
+</ul>
 </section>
+
+{% include _magazine/_footer.html %}

@@ -3,11 +3,10 @@ layout: writing
 title: Nooseance
 date: 2024-10-03 10:00:10 UTC
 categories: wrds
-banner: https://substack-post-media.s3.amazonaws.com/public/images/dea5652a-8aa0-434e-9cdc-041a7d1d247d_1024x1024.jpeg
-thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/dea5652a-8aa0-434e-9cdc-041a7d1d247d_1024x1024.jpeg
-banner_caption: "" 
 image: https://substack-post-media.s3.amazonaws.com/public/images/dea5652a-8aa0-434e-9cdc-041a7d1d247d_1024x1024.jpeg
-summary: "Nu·ooooh·sauns·e (exclamation.)"
+summary: "Nu·ooooh·sauns·e (excl.)"
+pronounciation: Nu·ooooh·sauns·e
+class: exclamation
 tags:
 - writing
 - wrds

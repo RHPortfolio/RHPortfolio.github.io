@@ -1105,3 +1105,75 @@ li[role=doc-endnote] > p {
     margin-left: 2px;
     line-height: 0;
 }
+
+/* BLOCKQUOTE */
+
+blockquote{
+  font-size: 1.4em;
+  margin: 3vh auto;
+  font-style: italic;
+  color: #555555;
+  padding: 5vh 3vw 5vh 8vw;
+  border-left: 8px solid rgba(115, 182, 162, 1);
+  line-height: 1.6;
+  position: relative;
+  background: rgba(233, 235, 234, 1);
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+#dictionary {
+  margin: 5vh auto;
+}
+
+
+#definition {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin: 2vh auto;
+}
+
+#pronounciation {
+   margin: 0 auto;
+ font-size: 1em;
+    font-weight: 700;
+    letter-spacing: .1vw;
+    word-spacing: 0.2vw;
+    text-transform: lowercase;
+    font-family: system-ui;
+}
+
+#pronounciation::before {
+  content: "[";
+}
+
+
+#pronounciation::after {
+  content: "]";
+}
+
+#syntactic-class {
+   margin: 0 auto;
+  font-weight: 700;
+}

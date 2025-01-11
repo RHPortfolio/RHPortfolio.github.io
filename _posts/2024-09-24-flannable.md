@@ -3,10 +3,10 @@ layout: writing
 title: "Flannable"
 date: 2024-09-24 22:33:00 UTC
 categories: wrds
-banner: https://substack-post-media.s3.amazonaws.com/public/images/ee9c5869-0b32-45f9-b573-99fddece727d_1024x1024.jpeg
-thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/ee9c5869-0b32-45f9-b573-99fddece727d_1024x1024.jpeg
 image: https://substack-post-media.s3.amazonaws.com/public/images/ee9c5869-0b32-45f9-b573-99fddece727d_1024x1024.jpeg
 summary: "Flan·nan·bull (noun)"
+pronounciation: Flan·nan·bull
+class: noun
 tags:
 - wrds
 - humour

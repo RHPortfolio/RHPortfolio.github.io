@@ -3,11 +3,10 @@ layout: writing
 title: Carrolling
 date: 2024-12-02 22:51:47 UTC
 categories: wrds
-banner: https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fef88cb1b-356f-4464-a394-9b645b6739bf_2048x2048.jpeg
-thumbnail: https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fef88cb1b-356f-4464-a394-9b645b6739bf_2048x2048.jpeg
-banner_caption: "" 
 image: https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fef88cb1b-356f-4464-a394-9b645b6739bf_2048x2048.jpeg
 summary: Kha·roll·ink·g (verb)
+pronounciation: Kha·roll·ink·g
+class: verb
 tags:
 - writing
 - wrds

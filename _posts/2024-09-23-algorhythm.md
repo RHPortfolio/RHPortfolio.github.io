@@ -3,11 +3,10 @@ layout: writing
 title: "Algorhythm"
 date: 2024-09-23 14:00:00 UTC
 categories: wrds
-banner: https://substack-post-media.s3.amazonaws.com/public/images/36712273-d67c-4b1c-8380-e4057c8ad629_1024x1024.jpeg
-thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/36712273-d67c-4b1c-8380-e4057c8ad629_1024x1024.jpeg
-banner_caption: "" 
 image: https://substack-post-media.s3.amazonaws.com/public/images/36712273-d67c-4b1c-8380-e4057c8ad629_1024x1024.jpeg
 summary: "Al·go·rith·um (noun)"
+pronounciation: Al·go·rith·um
+class: noun
 tags:
 - definition
 - wrds

@@ -1,0 +1,16 @@
+---
+name: definition
+permalink: pretty
+---
+
+{% include _magazine/_header.html %}
+  <section id="dictionary">
+    {% if page.title %}<p id="definition">{{ page.title}}</p>{% endif %}
+    {% if page.pronounciation %}<p id="pronounciation">{{ page.pronounciation }}</p>{% endif %}
+    {% if page.class %}<p id="syntactic-class">{{ page.class }}</p>{% endif %}
+  </section>
+  <article>
+     {{ content }}
+  </article>
+
+{% include _magazine/_footer_with_more_content.html %}

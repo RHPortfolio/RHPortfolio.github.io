@@ -3,11 +3,10 @@ layout: writing
 title: Fleecetious
 date: 2024-11-15 10:15:00 UTC
 categories: wrds
-banner: https://substack-post-media.s3.amazonaws.com/public/images/e1543f69-e1ee-4b87-9b9d-94d4285c25fc_2048x2048.png
-thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/e1543f69-e1ee-4b87-9b9d-94d4285c25fc_2048x2048.png
-banner_caption: "" 
 image: https://substack-post-media.s3.amazonaws.com/public/images/e1543f69-e1ee-4b87-9b9d-94d4285c25fc_2048x2048.png
 summary: Fle·cease·shhh·us (adj.)
+pronounciation: fle·cease·shhh·us
+class: adjective
 tags:
 - writing
 - wrds

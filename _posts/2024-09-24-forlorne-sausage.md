@@ -3,10 +3,10 @@ layout: writing
 title: "Forlorne Sausage"
 date: 2024-09-24 22:33:00 UTC
 categories: wrds
-banner: https://substack-post-media.s3.amazonaws.com/public/images/dec4a702-8960-4822-8783-47b8beec3250_1024x1024.jpeg
-thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/dec4a702-8960-4822-8783-47b8beec3250_1024x1024.jpeg
 image: https://substack-post-media.s3.amazonaws.com/public/images/dec4a702-8960-4822-8783-47b8beec3250_1024x1024.jpeg
 summary: "For·law·r·neh Zaw·za·jdge (noun)"
+pronounciation: For·law·r·neh Zaw·za·jdge
+class: noun
 tags:
 - wrds
 - humour

@@ -8,6 +8,8 @@ thumbnail: https://substack-post-media.s3.amazonaws.com/public/images/01bdb92e-7
 banner_caption: "" 
 image: https://substack-post-media.s3.amazonaws.com/public/images/01bdb92e-7b3d-4c54-9df9-c82e45422fa9_1024x1024.jpeg
 summary: Ah·kra·tizz·ma·fo·bee·ya (noun.)
+pronounciation: Ah·kra·tizz·ma·fo·bee·ya
+class: noun
 tags:
 - writing
 - wrds
@@ -18,7 +20,7 @@ tags:
 
 Put simply, it’s the fear of breakfasts.
 
-And I want to make this clear, it’s not the fear of breakfast foods. There’s plenty of folks with a fear of sausages [^1](for obvious reasons); many with allergies and actual life-threatening conditions evoked by eggs (***ovaphobia***); mushrooms have their wily ways so I can understand signs at fungi protests (“less rooms for mushrooms”, “I don’t trust plants that grow in the dark“ etc.)[^2]; ***lardaphobes*** (bacon fearers), have their place in the world; and that doesn’t even mention the vegan community, who live in fear of being by someone who insists they should eat bacon or else their life is meaningless (we call those ***lardaphiles***).
+And I want to make this clear, it’s not the fear of breakfast foods. There’s plenty of folks with a fear of sausages (for obvious reasons);[^1] many with allergies and actual life-threatening conditions evoked by eggs (***ovaphobia***); mushrooms have their wily ways so I can understand signs at fungi protests (“less rooms for mushrooms”, “I don’t trust plants that grow in the dark“ etc.);[^2] ***lardaphobes*** (bacon fearers), have their place in the world; and that doesn’t even mention the vegan community, who live in fear of being by someone who insists they should eat bacon or else their life is meaningless (we call those ***lardaphiles***).
 
 And yes, it’s a real thing. There exists a charity to support those who fear breakfasts, with a full English board (director, secretary, treasurer, comms officer etc.) who have been well funded by big egg.[^3] It’s important they spread awareness and their most vocal activity is to remove the phrase “eat x for breakfast” as discriminatory. They’d prefer the more accepting term to be “eat x for fun between meals”, though that has the snackphobics up in arms (their suggested preferred phrasings include “eat x for a joke”, “drink x when already hydrated” or even “put x in their mouth and chew it to show how little they care” - but those with a phobia of badly contemplated phrasings are, for lack of a better word, livid).[^4]
 
@@ -40,5 +42,5 @@ Before I end, a quick note on Ancient Greek meals. There has been a recent trend
 [^3]: And who funds big egg? big chicken! But who funds them…?? Subscribe as I follow the money… [^6]:
 [^4]: Frustratingly, they define themselves as being ***tritologists*** with an interest in studying badly formed phrases, rather than claiming a phobia. They actually don’t believe ***-phobia*** suffixes accurately convey the complexity of the situation regarding fear/hate/push triggers.
 [^5]: CIA 1 is of course already taken by the Citation Investigation Agency. They’ll be looking into this (***waves***)
-[^6]: This is a bonus footnoteto explain that in the original substack version of this post, I included a special (My Substack Big Egg Subscribe Button)[{{ "/assets/blogs/big_egg_subscribe.png" }}]
+[^6]: This is a bonus footnoteto explain that in the original substack version of this post, I included a special (My Substack Big Egg Subscribe Button)[a fake subscribe button to my imaginary new newsletter discovering the big egg conspiracy]{{ "/assets/blogs/big_egg_subscribe.png" }}
 
