@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: definition
 title: Nooseance
 date: 2024-10-03 10:00:10 UTC
 categories: wrds

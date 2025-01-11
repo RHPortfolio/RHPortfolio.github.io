@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: definition
 title: Carrolling
 date: 2024-12-02 22:51:47 UTC
 categories: wrds

@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: definition
 title: "Forlorne Sausage"
 date: 2024-09-24 22:33:00 UTC
 categories: wrds

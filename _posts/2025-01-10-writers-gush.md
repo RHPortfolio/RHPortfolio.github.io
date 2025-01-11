@@ -1,6 +1,7 @@
 ---
 title: Writer's Gush
 date: 2025-01-10 12:00:00 UTC
+layout: definition
 categories: wrds
 image: https://substack-post-media.s3.amazonaws.com/public/images/1ea388de-a7a6-40fd-afb4-bf73473df9b4_1456x816.jpeg
 summary: Right·turs·zeh·GG·ujjsh (noun.)

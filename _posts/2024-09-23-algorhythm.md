@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: definition
 title: "Algorhythm"
 date: 2024-09-23 14:00:00 UTC
 categories: wrds

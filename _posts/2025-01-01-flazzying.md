@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: definition
 title: Flazzying
 date: 2025-01-01 10:15:00 UTC
 categories: wrds

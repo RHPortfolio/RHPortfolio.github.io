@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: definition
 title: Fleecetious
 date: 2024-11-15 10:15:00 UTC
 categories: wrds

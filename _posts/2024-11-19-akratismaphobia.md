@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: definition
 title: Akratismaphobia
 date: 2024-11-19 13:25:00 UTC
 categories: wrds
