@@ -1,10 +1,13 @@
 {% include _magazine/_header.html %}
   
 
-{% assign filtered_posts = site.posts | where: "categories", page.category-filter %}
+  {% assign all_published_excerpts = site.extracts 
+    | where_exp: "post", "post.date <= site.time" 
+    | sort: 'date' | reverse %}
+
 <section class="recent-posts">
 <ul class="recent-posts">
-{% for item in filtered_posts %}
+{% for item in all_published_excerpts %}
 <!-- {% if post.categories contains page.category or post.category == page.category %} -->
     {% assign category = item.categories[0] | default: "blog" %}
     {% assign date = item.date | date_to_string %}

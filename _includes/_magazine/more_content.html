@@ -1,6 +1,6 @@
 {% include _magazine/article-row/row-header.html id='more-content' bg-colour='dark-green text-light' section-title='More Content' %}
 
- {% assign filtered_site_posts = site.posts | where_exp: "post", "post.title != page.title" %}
+ {% assign filtered_site_posts = site.posts | where_exp: "post", "post.date <= site.time" | where_exp: "post", "post.title != page.title" %}
 
       {% for post in filtered_site_posts limit: 2 %}
       
@@ -14,7 +14,7 @@
       <!-- {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %} -->
       <!-- {% assign random_post = site.posts[random] %} -->
 
-      {% assign random_post = site.posts | sample: 1 %}
+      {% assign random_post = site.posts | where_exp: "post", "post.title != page.title" | sample: 1 %}
 
       {% include _magazine/more_content_article.html content=random_post.content category=random_post.categories date=random_post.date summary=random_post.summary url=random_post.url title=random_post.title image=random_post.image number=random %}
 

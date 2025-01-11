@@ -2,26 +2,46 @@
   <p class="subpage-summary">{{subpage.summary}}</p>
   <ul class="subpage-posts mb-5">
    
-   {% assign all_posts = site.posts | concat: site.extracts | sort: 'date' | reverse %}
-   {% assign all_excerpts = site.extracts | sort: 'date' | reverse %}
+   {% assign all_published_posts = site.posts 
+    | concat: site.extracts 
+    | where_exp: "post", "post.date <= site.time" 
+    | sort: 'date' | reverse %}
+   
+   {% assign all_published_excerpts = site.extracts 
+    | where_exp: "post", "post.date <= site.time" 
+    | sort: 'date' | reverse %}
+
+   {% assign all_published_stories = site.tags.stories
+    | where_exp: "post", "post.date <= site.time" 
+    | sort: 'date' | reverse %}
+
+   {% assign all_published_blogs = site.tags.newsletter
+    | where_exp: "post", "post.date <= site.time" 
+    | sort: 'date' | reverse %}
+
+
    {% assign _subpage = (subpage.id | downcase) %}
-   	{% case _subpage %}
+   	
+    {% case _subpage %}
+     
      {% when "latest" %}
-   		{% for post in all_posts limit:9 %}
+   		{% for post in all_published_posts limit:9 %}
           {% include subpage_highlighted_image.html
             url=post.url
             title=post.title
             image=post.image %}
         {% endfor %}
+
       {% when "shorts" %}
       {% assign number_of_stories = site.tags.stories.size %}
-      {% for post in site.tags.stories limit:6 %}
+      {% for post in all_published_stories limit:6 %}
           {% include subpage_highlighted_image.html
             url=post.url
             title=post.title
             image=post.image %}
         {% endfor %}
       <li class="placeholder-banner dark-green"><p>new stories every month</p></li>
+
       {% when "wrds" %}
       {% for post in site.categories.wrds limit:6 %}
           {% include subpage_highlighted_image.html
@@ -29,8 +49,9 @@
             title=post.title
             image=post.image %}
         {% endfor %}
+
       {% when "blogs" %}
-      {% for post in site.tags.newsletter limit:6 %}
+      {% for post in all_published_blogs limit:6 %}
           {% include subpage_highlighted_image.html
             url=post.url
             title=post.title
@@ -38,7 +59,7 @@
         {% endfor %}
 
       {% when "extracts" %}
-      {% for post in all_excerpts limit:6 %}
+      {% for post in all_published_excerpts limit:6 %}
           {% include subpage_highlighted_image.html
             url=post.url
             title=post.title
