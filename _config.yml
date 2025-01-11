@@ -23,7 +23,7 @@ email: Richard@Hanrahan.org
 description: >- # this means to ignore newlines until "baseurl:"
   The comedy, writing, and other output of aspiring someone, Richard Hanrahan
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://therichardhanrahan.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://RHPortfolio.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thehitch
 github_username:  RHPortfolio
 
@@ -52,11 +52,11 @@ defaults:
   #     category: "alternative-wordbook"
   #   values:
   #     permalink: /extracts/alternative-wordbook/:title
-  - scope:
-      category: "wrds"
-    values:
-      layout: definition
-      permalink: /:categories/:title
+  # - scope:
+  #     category: "wrds"
+  #   values:
+  #     layout: definition
+  #     permalink: /:categories/:title
 
 collections:
   extracts:
