@@ -1,3 +1,15 @@
-<section id="banner" style="background: url('{{page.image}}') center 20%/cover no-repeat;">
+{% assign image_key=include.image | slice: 0, 1 %}
+
+{% if image_key == "." %}
+<section id="banner" style="background: url('{{include.image | absolute_url}}') center 20%/cover no-repeat;">
   <h1><span class="title-box-styling">{{page.title}}</span></h1>
 </section>
+{% elsif image_key == "h" %}
+<section id="banner" style="background: url('{{include.image }}') center 20%/cover no-repeat;">
+  <h1><span class="title-box-styling">{{page.title}}</span></h1>
+</section>
+{% else %}
+  <section id="banner" style="background: url('{{include.image}}') center 20%/cover no-repeat;">
+    <h1><span class="title-box-styling">{{page.title}}</span></h1>
+  </section>
+{% endif %}
