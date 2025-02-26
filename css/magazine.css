@@ -1095,6 +1095,15 @@ background: white;
   margin: 0vh 1vw 3vh 0vw;
 }
 
+.footnotes::before {
+  content: 'Footnotes';
+  color: rgba(24, 42, 34, 1);
+  text-transform: capitalize;
+  font-family: 'Abril Fatface';
+  font-size: 1.8rem;
+  margin: 4vh 0;
+}
+
 li[role=doc-endnote] > p {
   display: inline;
 }
@@ -1176,4 +1185,16 @@ blockquote span{
 #syntactic-class {
    margin: 0 auto;
   font-weight: 700;
+}
+
+figcaption {
+  font-style: italic;
+    padding: 0.5em 2em;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    margin: 0;
+    width: calc(100% - 6vh);
+    background: rgba(75, 132, 110, 0.2);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
