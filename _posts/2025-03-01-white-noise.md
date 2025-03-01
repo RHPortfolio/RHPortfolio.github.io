@@ -4,7 +4,7 @@ title: White Noise
 date: 2025-03-01 10:00:00 UTC
 categories: shorts
 image: https://substack-post-media.s3.amazonaws.com/public/images/91145987-b3a3-4cce-b22c-d8b6ae053696_1520x800.jpeg
-summary: "Farcepionage, if you choose to read it..."
+summary: "A man yet to empty his cup to receive his blessings"
 highlight: true
 tags:
 - humour
