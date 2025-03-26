@@ -1,0 +1,1 @@
+*Welcome back to my monthly quick-fire collection of short-sharp stabs of literary nonsense - this includes a raft of new words, some amended definitions and a short list of words which I now believe need to be removed as a matter of course. Long-form new word essays will still be published irregularly. Please adjust your dictionaries as necessary.*
