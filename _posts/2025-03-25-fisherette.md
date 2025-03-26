@@ -1,6 +1,6 @@
 ---
 title: Fisherette
-date: 2025-02-25 09:14:00 UTC
+date: 2025-03-25 09:14:00 UTC
 layout: definition
 categories: wrds
 image: https://substack-post-media.s3.amazonaws.com/public/images/4e4419f2-3178-4165-bcd6-61963a4dc0f6_2048x2048.jpeg
@@ -29,7 +29,7 @@ Both companies eventually iterated into the well loved product we celebrate with
 
 - ***Salmonella***: a branded spread made of smoked fish, often served with bananas and cream on a large billini
 
-- ***Schlüß***: like snus but instead of a giddy high from a small nicotine pouch, the chemical brings you close to death in order to enrich your life.[^1] It’s a bit like bungee jumping but kept between your lips and teeth. Pop one in while you work, bring yourself to the brink of extinction all while sat in a meeting with HR about your hygiene/unexplained fishy odour. It is often said by trained professionals that the only remedy to any existential or **nauxious** despair (see the [latest wrd-of-the-day monthly update for a definition of **nauxious**]({% link posts/2025-03-19-wrd-monthly-mar.md %})) is time, but now it can be solved with those on a busy schedule and kept as handily as one would a cyanide capsule.
+- ***Schlüß***: like snus but instead of a giddy high from a small nicotine pouch, the chemical brings you close to death in order to enrich your life.[^1] It’s a bit like bungee jumping but kept between your lips and teeth. Pop one in while you work, bring yourself to the brink of extinction all while sat in a meeting with HR about your hygiene/unexplained fishy odour. It is often said by trained professionals that the only remedy to any existential or **nauxious** despair (see the [latest wrd-of-the-day monthly update for a definition of **nauxious**]({% link _posts/2025-03-19-wrd-monthly-mar.md %})) is time, but now it can be solved with those on a busy schedule and kept as handily as one would a cyanide capsule.
 
 Not to be confused with the many, many soul vocalist groups that were ten a dime back in detroit (e.g. *Fintones*, *The Eelie Sisters*, *Susan and the Fish Flingers*, *Tbe Lady Basswallows*, *Calimari Five* etc.)
 
